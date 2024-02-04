@@ -1,0 +1,130 @@
+body {
+    background-color: #F1F6FA !important;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    /* backdrop-filter: blur(35px) !important; */
+}
+
+.player-details-header {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-details-header>div>img {
+    width: 152px;
+    mix-blend-mode: multiply;
+    height: 152px;
+}
+
+.player-details-header>div>h1 {
+    font-family: 'Saira_SemiBold';
+    font-size: 38px;
+    color: #000;
+}
+
+.player-details-header>div>p {
+    font-size: 16px;
+    color: #999;
+    margin-top: -0.5rem;
+    font-family: 'Saira_Medium';
+}
+
+.player-info-grid-row {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    gap: 10px;
+}
+
+.player-info-grid-row>div {
+    /* border: 1px solid black; */
+    height: auto;
+    padding: 20px 15px;
+}
+
+.player-info-grid-row>div:nth-child(1) {
+    background-color: #c7c7c7;
+    border-radius: 5px;
+}
+
+.heade-info {
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0rem;
+}
+
+.personal-info-grid-row {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.personal-info-grid-row>div:nth-child(1)>p {
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0rem;
+}
+
+.personal-info-grid-row>div:nth-child(2)>p {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0rem;
+}
+
+.player-details-wrapper {
+    margin-bottom: 5rem;
+}
+
+.icc-rankings-grid-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.head-icc {
+    font-family: 'Saira_Bold';
+    margin-bottom: 0rem;
+}
+
+.icc-rankings-grid-row>div>p {
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0rem;
+}
+
+
+.profile-info {
+    font-size: 16px;
+    font-family: 'Saira_Medium';
+    font-size: 16px;
+}
+
+.profile-info-row>p {
+    font-size: 14px;
+    font-family: 'Saira_Regular';
+    color: #000;
+}
+
+
+@media screen and (max-width: 992px) {
+    .player-info-grid-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .player-info-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

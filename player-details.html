@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061945" />
+    <title>Cricket</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/streaming-view.result.css">
+    <link rel="stylesheet" href="./Assets/CSS/player-details.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- navbar component starts here -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" src="./Assets/Icons/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link nav-active" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">Live Streaming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link last-child" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="margin-top: -2px;" class="nav-link last-child" href="#"><svg
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal1" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 3C7.02944 3 3 7.02944 3 12C3 14.3049 3.86647 16.4075 5.29146 17.9997C6.94 16.1586 9.3347 15 12 15C14.6655 15 17.0604 16.1588 18.7083 18C20.1334 16.4077 21 14.3051 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM15.5 9.5C15.5 11.433 13.933 13 12 13C10.067 13 8.5 11.433 8.5 9.5C8.5 7.567 10.067 6 12 6C13.933 6 15.5 7.567 15.5 9.5Z"
+                                        fill="#FFFFFF"></path>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar component ends here -->
+
+    <!-- player details component starts here -->
+    <section class="player-details-wrapper">
+        <div class="container">
+            <!-- player header -->
+            <div class="player-details-header">
+                <div>
+                    <img src="./Assets/Images/yashasvi-jaiswal.webp" alt="">
+                </div>
+                <div>
+                    <h1>Yashasvi Jaiswal
+                    </h1>
+                    <p>India</p>
+                </div>
+            </div>
+            <!-- player header -->
+
+            <!-- player info -->
+            <div class="player-info-grid-row">
+                <div>
+                    <p class="heade-info">Personal Information</p>
+
+                    <!-- personal info grid row -->
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Born</p>
+                        </div>
+                        <div>
+                            <p>Dec 28, 2001 (22 years)</p>
+                        </div>
+                    </div>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Birth Place</p>
+                        </div>
+                        <div>
+                            <p>Suriya, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Height</p>
+                        </div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Role</p>
+                        </div>
+                        <div>
+                            <p>Batsman</p>
+                        </div>
+                    </div>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Batting Style</p>
+                        </div>
+                        <div>
+                            <p>Left Handed Bat</p>
+                        </div>
+                    </div>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Bowling Style</p>
+                        </div>
+                        <div>
+                            <p>Right-arm legbreak</p>
+                        </div>
+                    </div>
+                    <!-- personal info grid row -->
+
+
+                    <p class="heade-info mt-4 mb-2">ICC Rankings</p>
+
+                    <!-- icc rankings grid row -->
+                    <div class="icc-rankings-grid-row">
+                        <div></div>
+                        <div>
+                            <p>Test</p>
+                        </div>
+                        <div>
+                            <p>ODI</p>
+                        </div>
+                        <div>
+                            <p>T20</p>
+                        </div>
+                    </div>
+
+                    <div class="icc-rankings-grid-row">
+                        <div>
+                            <p class="head-icc">Batting</p>
+                        </div>
+                        <div>
+                            <p>66</p>
+                        </div>
+                        <div>
+                            <p>--</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                    </div>
+
+                    <div class="icc-rankings-grid-row">
+                        <div>
+                            <p class="head-icc">Bowling</p>
+                        </div>
+                        <div>
+                            <p>--</p>
+                        </div>
+                        <div>
+                            <p>--</p>
+                        </div>
+                        <div>
+                            <p>--</p>
+                        </div>
+                    </div>
+                    <!-- icc rankings grid row -->
+
+                    <p class="heade-info mt-4">Career Information</p>
+                    <div class="personal-info-grid-row">
+                        <div>
+                            <p>Teams</p>
+                        </div>
+                        <div>
+                            <p>India U19, Mumbai, India U19 A, North Mumbai Panthers, India B, Rajasthan Royals, West
+                                Zone, Rest of India, India A, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="profile-info">Yashasvi Jaiswal's cricketing journey is an inspiration to many. Coming from
+                        a humble background,
+                        he waded through struggles to achieve his dreams. The Mumbai lad was in the news for making ...
+                    </p>
+
+                    <p class="heade-info mt-4 mb-2">Profile</p>
+                    <div class="profile-info-row">
+                        <p>Yashasvi Jaiswal's cricketing journey is an inspiration to many. Coming from a humble
+                            background,
+                            he waded through struggles to achieve his dreams. The Mumbai lad was in the news for making
+                            his
+                            entry into the Indian U-19 team for the Sri Lankan tour in August. Coming through the junior
+                            cricket ranks, Yashasvi has hit 49 centuries in the last five years, but he wasn't doing
+                            that
+                            well for the national team.</p>
+                        <p>In his first two matches, the youngster could muster paltry scores of 15 and 1, which saw him
+                            getting dropped from the side before a hammering 114 in the final helped him cement his
+                            place in the side. In the ACC U-19 Asia Cup, Yashasvi has started well by hitting his second
+                            ton against Nepal. Through a phenomenal U19 World Cup campaign in 2020, Yashasvi made a
+                            massive statement to everyone, that he had indeed arrived. Being picked for the Royals in
+                            the IPL was another boost and if he gets chances, the youngster will be keen to make his
+                            talent count.</p>
+                        <p>Jaiswal got only 3 games in the IPL in 2020, and 10 the following year but failed to really
+                            light up the tournament. However, the franchise kept their faith in his talent and retained
+                            him ahead of the mega auction, making him the second youngest player to ever be retained.
+                            Jaiswal had an upturn in form in the years that followed, as he knocked the house down
+                            scoring a bucketload of runs in the domestic circuit.</p>
+                        <p>The 2023 IPL was another purple patch for Jaiswal, as he took the pressure off a misfiring
+                            Jos Buttler by repeatedly giving the franchise aggressive starts. The southpaw scored 625
+                            runs at an average of 48.08 and a staggering strike rate of over 160. He also usurped the
+                            record for the fastest IPL 50 from KL Rahul and Pat Cummins, as he got to that mark in just
+                            13 balls against KKR. Jaiswal also picked up his maiden IPL hundred in 2023 at his native
+                            Wankhede Stadium against Mumbai Indians.</p>
+                        <p>A spellbinding IPL opened the doors for the first International call-up, as the southpaw was
+                            picked for the Test squad to West Indies post India’s WTC final defeat. He had a dream
+                            debut, scoring 171 runs in his first ever innings in International cricket, to claim the
+                            Player of the Match accolade. Later in the year, Jaiswal got his chance in T20I cricket as
+                            well. He was part of the squad for the Asian Games, and scored a century against Nepal.</p>
+                        <p>Still early days for the southpaw, but the signs are there for him to dominate world cricket
+                            in the decade to follow.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- player info grid -->
+        </div>
+    </section>
+    <!-- player details component ends here -->
+
+
+    <!-- login singup modal component starts here -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog login-modal-head">
+            <div class="modal-content">
+                <div class="modal-header login-modal">
+                    <h5 class="modal-title" id="exampleModalLabel1">Sign in to continue
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input id="mobileNumber" type="number" placeholder="Mobile Number">
+                    <button type="submit" id="submitButton">CONTINUE</button>
+
+                    <h4 class="oc-continue"><span>OR CONTINUE WITH</span></h4>
+
+                    <div class="login-auth">
+                        <div><img src="./Assets/Icons/fb.webp" alt=""></div>
+                        <div><img src="./Assets/Icons/google.webp" alt=""></div>
+                    </div>
+
+                    <p class="toc">By logging in, you agree to our <a href="">terms & conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login signup modal component ends here -->
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="./Assets/JS/jquery.min.js"></script>
+
+    <script src="./Assets/JS/Active.js"></script>
+</body>
+
+</html>
