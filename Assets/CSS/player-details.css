@@ -49,6 +49,7 @@ header {
 .player-info-grid-row>div:nth-child(1) {
     background-color: #c7c7c7;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .heade-info {
