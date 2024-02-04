@@ -128,3 +128,39 @@ header {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
+
+td{
+    width: 10%;
+    font-size: 14px;
+    font-family: 'Saira_Regular';
+}
+
+th{
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+}
+
+thead{
+    background-color: #999;
+}
+
+th{
+    padding: 15px 10px;
+}
+
+tbody, td, tfoot, th, thead, tr{
+    text-align: center;
+}
+
+.bowling-head{
+    font-size: 18px;
+    font-family: 'Saira_SemiBold';
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .table-scroll {
+        overflow-x: auto;
+    }
+}
