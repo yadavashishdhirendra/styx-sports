@@ -1,0 +1,1814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061945" />
+    <title>Cricket</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+    <!-- Owl carousel css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="./Assets/CSS/owl.carousel.min.css">
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="./Assets/CSS/owl.theme.default.min.css">
+    <!-- Owl carousel css -->
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+
+    <!-- Slick Carousel css Link -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./Assets/CSS/slick.css">
+    <link rel="stylesheet" href="./Assets/CSS/slick-theme.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- navbar component starts here -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" src="./Assets/Icons/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link nav-active" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">Live Streaming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="changeTextTransform(this)" class="nav-link last-child" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="margin-top: -2px;" class="nav-link last-child" href="#"><svg
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal1" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 3C7.02944 3 3 7.02944 3 12C3 14.3049 3.86647 16.4075 5.29146 17.9997C6.94 16.1586 9.3347 15 12 15C14.6655 15 17.0604 16.1588 18.7083 18C20.1334 16.4077 21 14.3051 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM15.5 9.5C15.5 11.433 13.933 13 12 13C10.067 13 8.5 11.433 8.5 9.5C8.5 7.567 10.067 6 12 6C13.933 6 15.5 7.567 15.5 9.5Z"
+                                        fill="#FFFFFF"></path>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar component ends here -->
+
+    <!-- banner component starts here -->
+    <section class="cricket-bg-row">
+        <!-- 1 of 2 col starts here -->
+        <div class="container">
+            <div class="banner-wrapper-grid-row">
+                <div class="content-text">
+                    <p>Styxsports</p>
+                    <h1>Ultimate destination <br>
+                        <span>for cricket!</span>
+                    </h1>
+                </div>
+                <div class="content-image">
+                    <img loading="lazy" src="./Assets/Images/player.png" alt="">
+                </div>
+                <div class="shimmer-bg"></div>
+            </div>
+        </div>
+        <!-- 1 of 2 col ends here -->
+    </section>
+    <!-- banner component ends here -->
+
+    <!-- video play component starts here -->
+    <section class="video-container">
+        <img loading="lazy" class="left-side" src="./Assets/Images/left_br.png" alt="">
+        <div class="container">
+            <div class="video-wrapper-grid-row">
+                <div class="video-wrapper-left-content">
+                    <p>recent watch</p>
+                    <h2>t20 wc 2024
+                        ind vs pak</h2>
+                    <p>location : new york</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's.....</p>
+                </div>
+                <div class="video-container-col">
+                    <img loading="lazy" class="top-row" src="./Assets/Images/Ellipse 2.png" alt="">
+                    <img loading="lazy" class="bottom-row" src="./Assets/Images/Ellipse 1.png" alt="">
+                    <div class="video-icon">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36"
+                                fill="none">
+                                <path
+                                    d="M18.5 33C10.2157 33 3.5 26.2842 3.5 18C3.5 9.71572 10.2157 3 18.5 3C26.7842 3 33.5 9.71572 33.5 18C33.5 26.2842 26.7842 33 18.5 33ZM16.4328 12.6219C16.3343 12.5562 16.2185 12.5211 16.1 12.5211C15.7686 12.5211 15.5 12.7897 15.5 13.1211V22.8789C15.5 22.9974 15.5351 23.1132 15.6008 23.2118C15.7845 23.4874 16.1571 23.562 16.4328 23.3781L23.7512 18.4992C23.8171 18.4552 23.8736 18.3987 23.9175 18.3328C24.1014 18.0571 24.0269 17.6846 23.7512 17.5008L16.4328 12.6219Z"
+                                    fill="white" />
+                            </svg>
+                            &nbsp;watch now
+                        </button>
+                        <img loading="lazy" class="video-content" src="./Assets/Images/video.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video play component ends here -->
+
+    <!-- live streaming cricket carousel starts here -->
+    <section class="live-streaming-container">
+        <img loading="lazy" class="right-side-ellipse" src="./Assets/Images/right-side.png" alt="">
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>Live</span> cricket streaming</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- skeleton loading -->
+            <div class="container skeleton-container" data-container-id="container1" data-timeout="4000"
+                style="display: block;">
+                <div class="shinner-skelton">
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skeleton loading -->
+
+            <!-- owl carousel -->
+            <div id="container1" class="owl-carousel owl-theme" style="display: none;">
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC_CRICKET_MR.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC-ODI-World-Cup-2023-Updated-Schedule.webp" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/Cricket-World-Cup-INDIA-VS-AUS-770x433.avif" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/hq720.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/0_8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- owl carousel -->
+        </div>
+    </section>
+    <!-- live streaming cricket carousel ends here -->
+
+    <!-- India Tour component starts here -->
+    <section class="india-tour-container">
+
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>India</span> Tour of SA 2023/24: 2nd Test</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- grid row india tour  -->
+            <!-- <div class="grid-row-india-tour-row">
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://www.nineforbrands.com.au/wp-content/uploads/2023/09/ICC_CRICKET_MR.jpg"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://crickettimes.com/wp-content/uploads/2023/08/ICC-ODI-World-Cup-2023-Updated-Schedule.webp"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/0*8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- grid row india tour -->
+
+            <!-- skeleton loading -->
+            <div class="container skeleton-container" data-container-id="container2" data-timeout="4500"
+                style="display: block;">
+                <div class="shinner-skelton">
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skeleton loading -->
+
+            <!-- owl carousel -->
+            <div id="container2" class="owl-carousel owl-theme" style="display: none;">
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC_CRICKET_MR.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC-ODI-World-Cup-2023-Updated-Schedule.webp" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/0_8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/hq720.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/Cricket-World-Cup-INDIA-VS-AUS-770x433.avif" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- owl carousel -->
+        </div>
+    </section>
+    <!-- India Tour component ends here -->
+
+    <!-- Live score component starts here -->
+    <section class="live-score-container">
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>Live</span> Score</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- slick carousel -->
+            <div class="carousel" id="slick-cs">
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+                <div>
+                    <!-- header dt -->
+                    <p class="live-score-dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                fill="#4D4D4D" />
+                        </svg> match starts at 2:30 pm</p>
+                    <!-- header dt -->
+
+                    <!-- flex row -->
+                    <div class="live-score-row">
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (1).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" class="throw-ball" src="./Assets/Images/live_score (3).png" alt="">
+                        </div>
+                        <div>
+                            <img loading="lazy" src="./Assets/Images/live_score (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-flex-row">
+                        <div>
+                            <p>Sri Lanka</p>
+                            <p>Punjab</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>(46.5) 152/10</p>
+                            <p>(73) 314/3</p>
+                        </div>
+                    </div>
+                    <!-- flex row -->
+                </div>
+            </div>
+            <!-- slick carousel -->
+        </div>
+    </section>
+    <!-- Live score component ends here -->
+
+    <!-- Big Bash component starts here -->
+    <section class="india-tour-container">
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>Big</span> Bash League 2023-24</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- grid row india tour  -->
+            <!-- <div class="grid-row-india-tour-row">
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://www.nineforbrands.com.au/wp-content/uploads/2023/09/ICC_CRICKET_MR.jpg"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://crickettimes.com/wp-content/uploads/2023/08/ICC-ODI-World-Cup-2023-Updated-Schedule.webp"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/0*8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- grid row india tour -->
+
+            <!-- skeleton loading -->
+            <div class="container skeleton-container" data-container-id="container5" data-timeout="5500"
+                style="display: block;">
+                <div class="shinner-skelton">
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skeleton loading -->
+
+            <!-- owl carousel -->
+            <div id="container5" style="display: none;" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC_CRICKET_MR.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC-ODI-World-Cup-2023-Updated-Schedule.webp" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/0_8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/hq720.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/Cricket-World-Cup-INDIA-VS-AUS-770x433.avif" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- owl carousel -->
+        </div>
+    </section>
+    <!-- Big Bash component ends here -->
+
+    <!-- popular live streaming Tours component starts here -->
+    <section class="live-streaming-wrapper">
+        <img loading="lazy" class="left-popular" src="./Assets/Images/popular (2).png" alt="">
+        <img loading="lazy" class="right-popular" src="./Assets/Images/popular (1).png" alt="">
+        <div class="container container-lamp">
+            <img loading="lazy" class="lamp-left" src="./Assets/Images/lamp (2).png" alt="">
+            <img loading="lazy" class="lamp-right" src="./Assets/Images/lamp (1).png" alt="">
+            <div class="headline-wrapper">
+                <h3><span>Popular Live</span> Streaming Tours</h4>
+            </div>
+
+
+
+            <!-- cards grid component  -->
+            <div class="cards-grid-row">
+                <div>
+                    <img loading="lazy" src="./Assets/Images/cards (1).png" alt="">
+                    <div class="card-text-content">
+                        <p>Big Bash League</p>
+                        <p>07 Dec - 24 Jan, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img loading="lazy" src="./Assets/Images/cards (2).png" alt="">
+                    <div class="card-text-content">
+                        <p>Big Bash League</p>
+                        <p>07 Dec - 24 Jan, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img loading="lazy" src="./Assets/Images/cards (3).png" alt="">
+                    <div class="card-text-content">
+                        <p>Big Bash League</p>
+                        <p>07 Dec - 24 Jan, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img loading="lazy" src="./Assets/Images/cards (4).png" alt="">
+                    <div class="card-text-content">
+                        <p>Big Bash League</p>
+                        <p>07 Dec - 24 Jan, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img loading="lazy" src="./Assets/Images/cards (5).png" alt="">
+                    <div class="card-text-content">
+                        <p>Big Bash League</p>
+                        <p>07 Dec - 24 Jan, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <!-- cards grid component -->
+        </div>
+    </section>
+    <!-- popular live streaming Tours component ends here -->
+
+    <!-- EFL Championship component starts here -->
+    <section class="india-tour-container mt-5">
+        <img loading="lazy" class="left-second-ellipse" src="./Assets/Images/left-second.png" alt="">
+        <img loading="lazy" class="left-side-third-ellipse" src="./Assets/Images/left-side-third.png" alt="">
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>EFL</span> Championship 2023-24</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- skeleton loading -->
+            <div class="container skeleton-container" data-container-id="container3" data-timeout="6000"
+                style="display: block;">
+                <div class="shinner-skelton">
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skeleton loading -->
+
+            <!-- grid row india tour  -->
+            <!-- <div class="grid-row-india-tour-row">
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://www.nineforbrands.com.au/wp-content/uploads/2023/09/ICC_CRICKET_MR.jpg"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://crickettimes.com/wp-content/uploads/2023/08/ICC-ODI-World-Cup-2023-Updated-Schedule.webp"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/0*8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- grid row india tour -->
+
+            <!-- owl carousel -->
+            <div id="container3" style="display: none;" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC_CRICKET_MR.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC-ODI-World-Cup-2023-Updated-Schedule.webp" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/0_8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/hq720.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/Cricket-World-Cup-INDIA-VS-AUS-770x433.avif" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- owl carousel -->
+        </div>
+    </section>
+    <!-- EFL Championship component ends here -->
+
+    <!-- AGE Tour component starts here -->
+    <section class="india-tour-container">
+        <div class="container">
+            <div class="streaming-header">
+                <h3><span>AFG</span> tour of UAE 2023-24</h3>
+                <button>view all</button>
+            </div>
+
+            <!-- skeleton loading -->
+            <div class="container skeleton-container" data-container-id="container4" data-timeout="8000"
+                style="display: block;">
+                <div class="shinner-skelton">
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skeleton-item">
+                            <div class="skeleton-img"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skeleton loading -->
+
+            <!-- grid row india tour  -->
+            <!-- <div class="grid-row-india-tour-row">
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://www.nineforbrands.com.au/wp-content/uploads/2023/09/ICC_CRICKET_MR.jpg"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://crickettimes.com/wp-content/uploads/2023/08/ICC-ODI-World-Cup-2023-Updated-Schedule.webp"
+                            alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel-img">
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/0*8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- grid row india tour -->
+
+            <!-- owl carousel -->
+            <div id="container4" style="display: none;" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC_CRICKET_MR.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/ICC-ODI-World-Cup-2023-Updated-Schedule.webp" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/0_8WQMz30MeNSk2I9o.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/hq720.jpg" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-img">
+                        <img loading="lazy" src="./Assets/Images/Cricket-World-Cup-INDIA-VS-AUS-770x433.avif" alt="">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"
+                                    fill="white" />
+                            </svg> &nbsp;watch now</button>
+                    </div>
+                    <div class="text-owl">
+                        <p>Cricket</p>
+                        <p>Zimbabwe of Sri Lanka, 2024</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.99998 14.6667C4.31808 14.6667 1.33331 11.6819 1.33331 8.00004C1.33331 4.31814 4.31808 1.33337 7.99998 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99998 14.6667ZM7.99998 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00004C13.3333 5.05452 10.9455 2.66671 7.99998 2.66671C5.05446 2.66671 2.66665 5.05452 2.66665 8.00004C2.66665 10.9456 5.05446 13.3334 7.99998 13.3334ZM8.66665 8.00004H11.3333V9.33337H7.33331V4.66671H8.66665V8.00004Z"
+                                    fill="#4D4D4D" />
+                            </svg> match starts at 2:30 pm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- owl carousel -->
+        </div>
+    </section>
+    <!-- AGE Tour component ends here -->
+
+    <!-- Subcribe newsletter component starts here -->
+    <section class="subcribe-container">
+        <!-- <div class="container"> -->
+        <div class="subcribe-grid-row">
+            <div>
+                <img loading="lazy" src="./Assets/Images/Asset 1@4x 4.png" alt="">
+            </div>
+            <div class="container">
+                <h4>Get Our Monthly
+                    <span>Newsletter</span>
+                </h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. </p>
+                <div class="input-container">
+                    <input type="text" placeholder="Input your emaill address in here">
+                    <div>
+                        <i class='fa-solid fa-arrow-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+    <!-- Subscribe newsletter component ends here -->
+
+    <!-- footer banner  -->
+    <!-- ODI Cricket -->
+    <section class="STREAMING">
+        <div class="live-Cricket">
+            <img loading="lazy" src="./Assets/Images/footer-banner.png" alt="">
+            <div class="Ellipse1"> </div>
+            <div class="Ellipse2"> </div>
+            <div class="ODI-crk">
+                <h3>ODI Cricket
+                </h3>
+                <h5>LIVE STREAMING</h5>
+                <p>Tomorrow at 13:30 (IST)</p>
+            </div>
+        </div>
+    </section>
+    <!-- ODI Cricket -->
+    <!-- footer banner -->
+
+    <!-- footer component starts here -->
+    <footer class="specimen">
+        <div class="printing">
+            <div class="printing-grid">
+                <img src="./Assets/Icons/logo.png" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+                <div class="lising-grid">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="printing-grid">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Live Streaming</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="printing-grid">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="">How we work</a></li>
+                    <li><a href="">Terms of service</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="printing-grid">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>790 7th Ave, New York, NY 10019,
+                        United States</li>
+                    <li><a href="">+1 202-918-2132</a></li>
+                    <li><a href="">youremailaddress@mail.com</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="batsman">
+            <svg xmlns="http://www.w3.org/2000/svg" width="109" height="224" viewBox="0 0 109 224" fill="none">
+                <path
+                    d="M87.2733 171.804C88.3902 171.804 89.5071 171.724 90.6638 171.644C91.1026 171.604 91.3818 171.245 91.3419 170.806C91.302 170.367 90.943 170.088 90.5043 170.128C70.2807 171.963 52.4904 155.881 39.4468 144.149C38.4496 143.231 37.4524 142.353 36.495 141.515C25.0071 131.3 16.7901 124.516 14.5563 122.72L20.8587 115.258C25.6453 117.612 61.1462 135.091 73.392 140.717C86.9542 147.022 92.6184 138.802 92.6583 138.722C92.8976 138.403 92.7779 137.924 92.4588 137.684C92.0998 137.485 91.661 137.565 91.4217 137.884C91.2223 138.163 86.3559 145.107 74.0303 139.36C60.9867 133.295 21.4171 113.821 21.0183 113.621C20.6991 113.462 20.3401 113.542 20.1008 113.821L13.0006 122.361C12.881 122.52 12.8012 122.72 12.8411 122.919C12.8411 123.119 12.9608 123.318 13.1203 123.438C13.2001 123.518 22.1351 130.741 35.5776 142.633C36.5349 143.511 37.4923 144.389 38.5294 145.267C50.9746 156.56 67.8475 171.804 87.2733 171.804Z"
+                    fill="white" />
+                <path
+                    d="M56.0805 107.955L58.3541 106.199L59.83 105.082V105.042L65.6538 100.612C65.8931 100.413 66.2521 100.413 66.4914 100.572C66.7706 100.732 66.8903 101.051 66.8504 101.37L66.0925 105.361C66.0925 105.361 66.0527 105.88 66.2521 106.758C66.292 106.797 66.292 106.877 66.292 106.917C66.4116 107.356 66.5712 107.835 66.8105 108.394C67.0499 108.992 67.4089 109.591 67.8875 110.309C68.8449 111.706 69.6825 112.703 70.2808 113.382L70.4005 113.502C70.7994 113.98 71.1185 114.26 71.2382 114.38C71.318 114.459 71.3578 114.499 71.3578 114.499C71.3977 114.539 71.4775 114.659 71.5174 114.739C71.5972 114.898 71.6371 115.058 71.5573 115.218L69.2836 125.034L69.0044 126.271L68.9246 126.511C68.8847 126.71 68.7252 126.87 68.5656 126.99C68.446 127.069 68.2864 127.109 68.1667 127.109H67.9673C67.9274 127.109 67.8476 127.069 67.7679 127.069C67.6482 127.03 67.5285 126.99 67.2892 126.95C65.4543 126.391 60.4682 124.675 58.5137 121.403C56.2799 117.492 56.1204 111.586 56.1204 111.426L55.7215 108.673C55.7614 108.394 55.881 108.154 56.0805 107.955ZM59.9497 120.645C61.5452 123.358 65.933 124.875 67.6881 125.473V125.433L70.0814 115.297L70.0016 115.218C69.7224 114.978 69.3634 114.579 68.9246 114.02C68.3263 113.342 67.6083 112.384 66.7308 111.227C66.0527 110.229 65.574 109.272 65.2948 108.473C65.2549 108.354 65.215 108.274 65.1751 108.154C64.9757 107.556 64.856 107.077 64.8161 106.638C64.6565 105.84 64.6964 105.321 64.6964 105.241L65.0953 103.086L57.3968 108.952L57.6361 110.668L57.7159 111.347C57.7159 111.347 57.7159 111.706 57.7558 112.265V112.304C57.7957 112.783 57.8356 113.462 57.9553 114.18C58.2345 116.095 58.7929 118.689 59.9497 120.645Z"
+                    fill="white" />
+                <path
+                    d="M56.5989 112.025C56.6388 112.105 56.7186 112.185 56.7984 112.185C56.918 112.304 57.0776 112.384 57.2371 112.384C57.3568 112.384 57.4765 112.344 57.5961 112.304L57.7557 112.225H57.7956L65.1351 108.114L65.2947 108.034L65.9728 107.635C66.252 107.516 66.3716 107.236 66.3716 106.957C66.3716 106.877 66.3318 106.837 66.3318 106.797C66.3318 106.758 66.3318 106.678 66.2919 106.638C66.0924 106.239 65.6536 106.119 65.2548 106.358L64.7761 106.598L57.5961 110.588L56.8781 110.987C56.5191 111.227 56.3995 111.666 56.5989 112.025Z"
+                    fill="white" />
+                <path
+                    d="M63.3002 117.332C63.38 117.332 63.4597 117.332 63.5395 117.293L70.8391 114.938C71.238 114.818 71.4375 114.379 71.3178 113.98C71.1981 113.581 70.7594 113.382 70.4004 113.502L63.4199 115.736L57.6759 112.185C57.3169 111.945 56.8382 112.065 56.6388 112.424C56.3995 112.783 56.5191 113.262 56.8781 113.462L62.9412 117.253C63.021 117.293 63.1406 117.332 63.3002 117.332Z"
+                    fill="white" />
+                <path
+                    d="M106.38 118.21C106.579 118.21 106.779 118.131 106.898 118.011C107.218 117.731 107.218 117.213 106.898 116.933L102.67 112.624C102.551 112.504 102.391 112.424 102.192 112.384L88.8289 111.386L70.5998 113.302C70.2009 113.342 69.8818 113.741 69.9217 114.14C69.9616 114.579 70.3605 114.858 70.7594 114.818L88.8688 112.943L101.793 113.901L105.821 118.011C105.981 118.131 106.18 118.21 106.38 118.21Z"
+                    fill="white" />
+                <path
+                    d="M96.3281 136.726C96.5674 136.726 96.8067 136.607 96.9663 136.367L100.676 130.302L103.428 126.191L107.138 117.691C107.297 117.292 107.138 116.853 106.739 116.694C106.38 116.534 105.901 116.734 105.742 117.093L102.351 124.954C101.194 124.316 98.8809 122.999 98.5618 122.839C98.3225 122.759 97.8837 122.6 79.8142 122.759L67.7279 125.433C67.4088 125.513 67.2094 125.712 67.1296 126.032C67.0498 126.311 67.1695 126.63 67.4088 126.79C67.8077 127.069 76.9023 133.853 82.0878 135.09L87.3132 136.208L96.2483 136.766C96.2882 136.726 96.3281 136.726 96.3281 136.726ZM101.593 126.271L99.3995 129.504L95.8893 135.17L87.5127 134.691L82.4069 133.574C78.6175 132.696 72.3949 128.466 69.6426 126.55L79.9338 124.276C86.5155 124.236 96.6871 124.196 97.9635 124.276C98.5618 124.555 100.516 125.673 101.593 126.271Z"
+                    fill="white" />
+                <path
+                    d="M93.9347 135.809C94.2538 135.809 94.5331 135.649 94.6527 135.33C97.5646 127.349 102.072 115.218 102.67 114.06C102.79 113.941 102.83 113.741 102.83 113.581C102.83 113.142 102.471 112.823 102.072 112.823C101.354 112.823 101.234 112.823 93.2167 134.811C93.0572 135.21 93.2965 135.649 93.6555 135.769C93.7353 135.809 93.8151 135.809 93.9347 135.809Z"
+                    fill="white" />
+                <path
+                    d="M86.5953 136.008C86.9543 136.008 87.2734 135.729 87.3532 135.37L89.0684 123.837L89.5072 113.102C89.547 112.703 89.188 112.344 88.7892 112.304C88.3105 112.304 88.0313 112.623 87.9914 113.023L87.5127 123.677L85.7975 135.13C85.7177 135.529 85.997 135.928 86.4357 136.008C86.5554 136.008 86.5554 136.008 86.5953 136.008Z"
+                    fill="white" />
+                <path
+                    d="M65.2948 108.433C65.3347 108.513 65.3746 108.593 65.4144 108.673C65.6937 108.992 66.1723 109.072 66.4914 108.792C66.4914 108.792 66.651 108.673 66.9302 108.433C68.4061 107.356 73.6315 103.764 78.8968 102.926C85.3987 101.889 103.189 103.365 104.944 105.121C105.223 105.401 105.343 105.72 105.343 106.119C105.303 107.715 103.149 109.87 102.591 110.349C102.272 110.628 102.232 111.067 102.511 111.426C102.67 111.586 102.87 111.666 103.109 111.666C103.269 111.666 103.468 111.626 103.588 111.466C103.628 111.426 106.779 108.713 106.859 106.159C106.899 105.361 106.619 104.602 106.021 104.004C105.423 103.445 103.987 102.966 102.032 102.527C101.753 102.487 101.514 102.408 101.234 102.328C94.6129 101.091 83.2846 100.612 78.6176 101.37C73.3124 102.248 68.3263 105.52 66.3718 106.957C65.8532 107.356 65.574 107.555 65.5341 107.595C65.4144 107.675 65.2948 107.835 65.2948 108.034C65.215 108.154 65.215 108.314 65.2948 108.433Z"
+                    fill="white" />
+                <path
+                    d="M59.8695 105.081L65.6933 100.652C65.9326 100.452 66.2916 100.452 66.5309 100.612C66.8101 100.772 66.9298 101.091 66.8899 101.41L66.132 105.401C66.132 105.401 66.0921 105.919 66.2916 106.797C66.3315 106.837 66.3315 106.917 66.3315 106.957C68.286 105.56 73.2721 102.288 78.5773 101.37C83.2443 100.652 94.5726 101.091 101.194 102.328C101.074 102.208 100.955 102.088 100.955 101.889C100.915 101.37 99.6784 89.3186 85.1988 86.1661C78.4177 84.7295 71.876 86.3656 66.7703 90.7951C62.4623 94.626 59.8695 100.013 59.8695 105.081Z"
+                    fill="#CC0102" />
+                <path
+                    d="M58.3938 106.239C58.3938 106.278 58.3938 106.278 58.3938 106.278C58.4337 106.678 58.7528 106.997 59.1517 106.997H59.1916C59.6303 106.957 59.9494 106.598 59.9095 106.199C59.9095 105.84 59.9095 105.52 59.9095 105.121V105.081C59.9095 100.013 62.5023 94.626 66.8103 90.835C71.916 86.4055 78.4578 84.7694 85.2388 86.206C99.7184 89.3585 100.955 101.41 100.995 101.929C100.995 102.088 101.115 102.248 101.234 102.368C101.354 102.527 101.593 102.647 101.833 102.607C101.872 102.607 101.952 102.567 101.992 102.567C102.311 102.448 102.511 102.128 102.511 101.849C102.471 101.689 101.115 88.2012 85.5181 84.8093C78.378 83.253 71.198 85.0487 65.7732 89.7576C60.827 94.0275 57.9949 100.372 58.3938 106.239Z"
+                    fill="white" />
+                <path
+                    d="M100.038 170.128C100.237 170.128 100.437 170.048 100.596 169.888C107.258 162.665 109.97 155.841 108.693 149.616C106.899 140.757 97.6842 136.487 97.3252 136.327C96.9662 136.168 96.5275 136.327 96.328 136.687C96.1685 137.086 96.328 137.525 96.7269 137.684C96.8067 137.724 105.622 141.795 107.258 149.895C108.414 155.642 105.782 162.027 99.4792 168.89C99.2 169.17 99.2399 169.689 99.5191 169.928C99.6388 170.048 99.8382 170.128 100.038 170.128Z"
+                    fill="white" />
+                <path
+                    d="M92.8576 224C92.9773 224 93.0571 223.96 93.1369 223.92C93.5357 223.76 93.7352 223.321 93.5357 222.922C86.3957 205.484 93.4958 190.998 100.357 176.951C103.867 169.808 107.138 163.064 108.614 156.001C108.693 155.602 108.454 155.203 108.015 155.123C107.616 155.043 107.218 155.282 107.138 155.721C105.702 162.585 102.471 169.249 99.0005 176.313C92.02 190.639 84.7602 205.444 92.1795 223.521C92.2992 223.8 92.5784 224 92.8576 224Z"
+                    fill="white" />
+                <path
+                    d="M18.9041 149.656C20.4198 149.656 22.2946 149.017 24.4486 147.74C28.9959 145.107 33.7426 140.757 33.9421 140.557C34.2612 140.278 34.2612 139.799 33.982 139.52C33.7027 139.201 33.2241 139.201 32.905 139.48C32.8252 139.52 28.0785 143.909 23.6907 146.463C21.1378 147.94 18.9838 148.459 17.7473 147.9C17.149 147.621 16.79 147.102 16.6703 146.304C16.5905 145.905 16.1916 145.625 15.7927 145.665C15.3939 145.745 15.1146 146.144 15.1944 146.543C15.4338 147.82 16.1119 148.778 17.149 149.257C17.6276 149.536 18.226 149.656 18.9041 149.656Z"
+                    fill="white" />
+                <path
+                    d="M16.5109 173.519C24.2094 173.519 35.6973 162.905 41.2817 157.677C42.3986 156.639 43.4756 155.642 43.7149 155.522C44.1138 155.442 44.3133 155.043 44.1936 154.644C44.0739 154.245 43.6352 154.006 43.1964 154.125C42.7975 154.245 42.4385 154.564 40.2047 156.599C35.0591 161.348 23.0925 172.482 16.0322 172.003C14.676 171.883 13.5591 171.364 12.7215 170.327C8.25393 164.82 1.3532 148.259 1.3133 148.139C1.15375 147.74 0.714977 147.541 0.31609 147.74C-0.0827942 147.9 -0.282238 148.339 -0.0827942 148.738C0.196426 149.416 6.9376 165.658 11.5647 171.325C12.6816 172.681 14.1575 173.4 15.9126 173.519C16.1519 173.479 16.3114 173.519 16.5109 173.519Z"
+                    fill="white" />
+                <path
+                    d="M2.86889 150.254C3.42734 147.98 5.30211 146.344 7.21676 145.785C8.1342 145.466 9.09152 145.426 9.84941 145.665C9.8893 145.665 9.8893 145.705 9.92919 145.705C10.009 145.745 10.0887 145.785 10.0887 145.825C10.4876 146.144 13.7984 148.937 13.6787 151.651C13.6388 152.649 13.1203 153.527 12.1629 154.205C11.1258 154.923 9.8893 155.322 8.53309 155.322C6.57854 155.322 4.58411 154.444 3.5869 153.128C3.46723 153.008 3.38745 152.888 3.34756 152.768C3.10823 152.449 2.98856 152.09 2.90879 151.731C2.74923 151.212 2.74923 150.733 2.86889 150.254ZM4.74367 152.13C5.54144 153.088 7.05721 153.766 8.53309 153.766C9.5303 153.766 10.5275 153.447 11.3253 152.888C11.8837 152.529 12.1629 152.09 12.1629 151.531C12.2028 149.935 10.2084 147.86 9.29097 147.062C7.61565 146.743 4.90322 148.259 4.34478 150.613C4.18522 151.252 4.46445 151.771 4.74367 152.13Z"
+                    fill="white" />
+                <path
+                    d="M4.74346 152.13C5.54123 153.088 7.057 153.766 8.53288 153.766C9.53009 153.766 10.5273 153.447 11.3251 152.888C11.8835 152.529 12.1627 152.09 12.1627 151.531C12.2026 149.935 10.2082 147.86 9.29076 147.062C7.61544 146.743 4.90301 148.259 4.34457 150.613C4.18501 151.252 4.46424 151.771 4.74346 152.13Z"
+                    fill="#CC0102" />
+                <path
+                    d="M7.65544 147.102C7.81499 147.102 7.97455 147.062 8.09422 146.982L16.7102 140.797C17.2686 142.034 17.827 143.271 17.9866 143.75C17.6675 144.109 16.3113 145.386 15.9124 145.546C15.5135 145.665 15.2742 146.064 15.3539 146.463C15.4736 146.863 15.9124 147.102 16.3113 147.022C17.1091 146.823 19.3029 144.668 19.4625 144.069C19.5423 143.79 19.5821 143.431 17.6675 139.32C17.5877 139.121 17.3883 138.961 17.1888 138.921C16.9894 138.881 16.7501 138.881 16.5506 139.041L7.21667 145.745C6.85767 145.985 6.77789 146.463 7.05711 146.783C7.21666 147.022 7.41611 147.102 7.65544 147.102Z"
+                    fill="white" />
+                <path
+                    d="M0.635197 149.017C0.914417 149.017 1.19364 148.858 1.31331 148.578C1.47286 148.179 1.31331 147.74 0.914422 147.581C0.874533 147.541 -2.79522 145.945 -3.51322 143.55C-3.75255 142.712 -3.63289 141.914 -3.11433 141.036C-0.56146 136.926 6.45895 136.487 6.53872 136.487C6.93761 136.487 7.25671 136.128 7.25671 135.689C7.21683 135.29 6.9376 135.011 6.45894 134.971C6.13983 135.011 -1.439 135.41 -4.39076 140.238C-5.14865 141.475 -5.3481 142.752 -4.94921 143.989C-3.99189 147.022 0.156538 148.858 0.316092 148.938C0.435758 148.978 0.555419 149.017 0.635197 149.017Z"
+                    fill="white" />
+                <path
+                    d="M-3.99203 146.703C-2.55604 147.581 -1.35939 148.06 -1.3195 148.06C-1.27961 148.06 -1.27961 148.099 -1.23972 148.099C-1.15994 148.139 -1.12006 148.139 -1.08017 148.139C-0.76106 148.139 -0.481844 147.9 -0.362178 147.621C-0.242512 147.222 -0.441948 146.783 -0.840835 146.663C-1.00039 146.623 -3.0746 145.865 -4.8297 144.269C-6.30558 142.952 -7.50224 141.036 -7.02357 138.482C-6.18591 133.813 3.70647 132.297 7.61556 132.057H7.69533C8.09422 132.057 8.41333 131.658 8.41333 131.259C8.37344 130.94 8.174 130.661 7.89478 130.581C7.815 130.541 7.73522 130.541 7.61556 130.541C7.05712 130.581 -5.98647 131.219 -8.26012 137.245C-8.37979 137.564 -8.45957 137.884 -8.49946 138.163C-9.29723 142.473 -6.34546 145.226 -3.99203 146.703Z"
+                    fill="white" />
+                <path
+                    d="M-4.27123 146.623C-4.19145 146.663 -4.11167 146.703 -3.99201 146.703C-3.99201 146.743 -3.91223 146.743 -3.87235 146.743C-3.71279 146.743 -3.47346 146.663 -3.3538 146.463C-3.31391 146.503 -3.27401 146.423 -3.23413 146.384C-3.03468 146.064 -3.11446 145.585 -3.51335 145.346C-3.59313 145.306 -4.11167 144.947 -4.78978 144.348C-6.14599 143.151 -8.22021 140.717 -8.2601 137.245C-8.2601 136.327 -8.14043 135.29 -7.86121 134.212C-5.74711 127.029 8.2538 127.508 8.37347 127.548C8.41335 127.548 8.41335 127.548 8.45324 127.548C8.85213 127.468 9.17124 127.229 9.17124 126.83C9.21113 126.471 8.93191 126.151 8.6128 126.072C8.57291 126.032 8.49313 126.032 8.45324 126.032C7.8948 125.992 -3.35379 125.633 -7.78143 131.02C-7.94098 131.18 -8.06065 131.379 -8.18032 131.539C-8.65898 132.217 -9.01798 132.935 -9.25731 133.773V133.813C-9.2972 133.893 -9.2972 133.933 -9.3371 133.973C-11.5709 142.194 -4.31112 146.583 -4.27123 146.623Z"
+                    fill="white" />
+                <path
+                    d="M-9.69608 133.135V133.295C-9.69608 133.574 -9.53653 133.813 -9.33708 133.933C-9.21742 134.013 -9.09775 134.053 -8.9382 134.053C-8.89831 134.053 -8.89831 134.053 -8.89831 134.053C-8.49942 134.053 -8.14042 133.734 -8.14042 133.335V133.175C-8.10053 132.377 -7.98087 131.698 -7.74154 131.02C-7.74154 130.98 -7.74154 130.98 -7.74154 130.98C-5.38811 123.518 7.37626 122.241 7.49593 122.201C7.57571 122.201 7.5757 122.201 7.65548 122.161C7.97459 122.081 8.25381 121.762 8.17404 121.403C8.13415 121.004 7.77515 120.684 7.33638 120.764C7.2566 120.764 6.97738 120.804 6.5386 120.844C3.98573 121.243 -3.95211 122.68 -7.70165 127.588V127.628C-8.85842 129.065 -9.6163 130.9 -9.69608 133.135Z"
+                    fill="white" />
+                <path
+                    d="M-9.69608 133.135C-9.65619 133.255 -9.65619 133.295 -9.65619 133.295C-9.6163 133.534 -9.45675 133.734 -9.2573 133.774C-9.17753 133.853 -9.05786 133.893 -8.9382 133.893H-8.77863C-8.45953 133.813 -8.1803 133.494 -8.1803 133.175V133.055C-8.1803 133.055 -8.22019 132.616 -8.1803 131.539C-8.14042 130.661 -8.02076 129.384 -7.74154 127.588V127.548C-7.58198 126.75 -7.42242 125.872 -7.18309 124.875C-6.02632 119.208 4.22506 118.609 4.34473 118.609C4.74361 118.57 5.02283 118.25 5.02283 117.811C4.98294 117.372 4.62394 117.133 4.22505 117.093C4.14528 117.093 3.66662 117.133 2.90873 117.213C-0.162692 117.612 -7.58198 119.048 -8.69886 124.595C-9.85563 130.062 -9.77586 132.497 -9.69608 133.135Z"
+                    fill="white" />
+                <path
+                    d="M-9.8556 111.706C-8.93816 113.382 -7.18307 114.739 -5.74708 115.577C-4.86953 116.055 -3.79253 115.497 -2.27676 114.739C-1.83798 114.499 -1.31943 114.26 -0.800875 114.02C-0.282323 113.781 0.23623 113.541 0.794671 113.382C2.19077 112.863 3.66665 112.703 5.06275 113.262C9.33083 115.018 13.3596 121.283 13.3995 121.323C13.4394 121.443 13.5191 121.483 13.6388 121.562C13.7585 121.642 13.8781 121.682 14.0377 121.682C14.1574 121.682 14.277 121.642 14.4366 121.562C14.7956 121.363 14.8754 120.884 14.636 120.525C14.636 120.485 14.636 120.485 14.5562 120.405C14.4366 120.206 14.2371 119.926 13.9579 119.527C13.7186 119.168 13.3995 118.769 13.0804 118.33C12.6815 117.811 12.1629 117.173 11.6444 116.574C11.3253 116.215 11.0062 115.816 10.6073 115.457C9.8095 114.699 8.97184 113.94 8.09429 113.262C7.57573 112.863 7.05718 112.544 6.49874 112.264C6.21952 112.105 5.90041 111.945 5.62119 111.825C2.4301 110.509 -0.800875 112.225 -2.99475 113.302C-3.75263 113.701 -4.74986 114.18 -5.06896 114.18C-6.46507 113.342 -9.93538 110.708 -8.69883 108.593C-7.22295 106.039 1.67222 103.366 3.30765 103.924C4.38464 104.243 5.66109 107.516 6.17964 109.631C6.21953 109.71 6.21952 109.79 6.2993 109.87V109.91C6.45885 110.189 6.77796 110.309 7.09707 110.189C7.49596 110.07 7.73529 109.671 7.61562 109.272C7.45607 108.593 6.81786 106.279 5.78075 104.483C5.18242 103.485 4.50431 102.687 3.70654 102.448C1.47277 101.729 -6.90385 104.283 -9.5365 107.157C-9.73594 107.396 -9.93538 107.595 -10.055 107.835C-10.773 109.192 -10.5736 110.509 -9.8556 111.706Z"
+                    fill="white" />
+                <path
+                    d="M-9.57621 111.746C-9.49644 111.746 -9.41667 111.706 -9.33689 111.706C-8.93801 111.586 -8.73856 111.147 -8.85822 110.748C-8.89811 110.668 -10.8925 104.483 -7.66156 102.168C-4.15136 99.774 5.34213 100.133 5.4618 100.133C5.90057 100.093 6.21968 99.8139 6.21968 99.4148C6.25957 99.0158 5.90057 98.6566 5.50169 98.6566C5.1028 98.6167 -4.59014 98.2975 -8.53912 100.971C-12.7274 103.924 -10.4538 110.987 -10.3341 111.267C-10.2144 111.546 -9.93521 111.746 -9.57621 111.746Z"
+                    fill="white" />
+                <path
+                    d="M-10.2943 105.68C-10.2544 105.68 -10.1746 105.68 -10.1348 105.68C-9.73587 105.6 -9.45665 105.201 -9.53643 104.802C-9.53643 104.762 -10.1348 101.689 -8.49932 99.2552C-7.5021 97.7787 -5.86666 96.821 -3.6329 96.382C4.06561 95.0252 11.4051 99.1754 11.445 99.2552C11.804 99.4547 12.2428 99.335 12.4821 98.9759C12.6816 98.6167 12.5619 98.1379 12.2029 97.9383C11.8838 97.7787 4.34482 93.4689 -3.91213 94.9055C-6.54478 95.3844 -8.49932 96.5815 -9.73587 98.4172C-11.7303 101.37 -11.0123 104.962 -11.0123 105.081C-10.9724 105.48 -10.6134 105.68 -10.2943 105.68Z"
+                    fill="white" />
+                <path
+                    d="M-5.06887 114.26C-4.74976 114.26 -3.75254 113.781 -2.99465 113.382C-0.800776 112.265 2.43019 110.588 5.62129 111.905C5.94039 112.025 6.21962 112.185 6.49884 112.344L6.25951 109.95V109.91C6.17973 109.87 6.17973 109.79 6.13984 109.671C5.62129 107.556 4.30496 104.283 3.26786 103.964C1.63242 103.445 -7.26275 106.079 -8.73863 108.633C-9.93529 110.788 -6.46497 113.422 -5.06887 114.26Z"
+                    fill="#CC0102" />
+                <path
+                    d="M5.70098 103.485L5.82065 104.483L6.29931 109.87V109.91L6.53865 112.304L6.65831 113.462C6.6982 113.861 6.97742 114.14 7.37631 114.14C7.41619 114.14 7.4162 114.14 7.4162 114.14C7.85497 114.1 8.17408 113.741 8.0943 113.302L7.21675 103.725C9.09152 102.009 11.1657 100.213 11.9635 99.6145C12.1231 99.4948 12.2427 99.415 12.2826 99.3751C12.6815 99.2154 12.8411 98.8563 12.7214 98.4572C12.6815 98.3774 12.6416 98.2976 12.6017 98.2577C12.4821 98.138 12.3225 98.0582 12.1629 97.9784C12.0433 97.9385 11.8438 97.9385 11.7242 98.0183C11.6045 98.0582 11.445 98.0981 10.5275 98.8563C9.72974 99.4948 8.33364 100.732 5.94032 102.927C5.78076 103.046 5.70098 103.246 5.70098 103.485Z"
+                    fill="white" />
+                <path
+                    d="M9.92928 116.933C10.0489 117.133 10.2883 117.253 10.5276 117.253C10.6473 117.253 10.8068 117.213 10.9664 117.093L11.6046 116.614L15.9126 113.462C16.0721 113.382 16.1519 113.222 16.2317 113.023C17.5879 107.595 18.1862 104.962 18.4654 103.685C18.7048 102.607 18.6649 102.488 18.625 102.408C18.5053 101.969 18.1065 101.769 17.7076 101.849C17.4283 101.889 17.2289 102.128 17.1491 102.408C17.1092 102.448 17.1092 102.527 17.1092 102.607C17.0295 103.286 15.6732 108.832 14.7957 112.424L10.5675 115.497L10.0489 115.856C9.76972 116.135 9.68995 116.614 9.92928 116.933Z"
+                    fill="white" />
+                <path
+                    d="M12.6815 119.727C12.8411 119.886 13.0405 119.966 13.24 119.966C13.4394 119.966 13.599 119.886 13.7585 119.767L13.9181 119.607L19.1435 114.659C19.2632 114.539 19.3429 114.379 19.3429 114.22L20.8587 105.081C20.8986 104.882 20.8587 104.722 20.739 104.563C20.6194 104.403 20.4598 104.283 20.2205 104.243C19.8216 104.203 19.4227 104.443 19.3429 104.842L19.303 104.962L17.8671 113.741L12.9209 118.41L12.6018 118.689C12.4422 118.968 12.4422 119.447 12.6815 119.727Z"
+                    fill="white" />
+                <path
+                    d="M11.6445 116.614C12.1631 117.213 12.6816 117.811 13.0805 118.37L18.0267 113.701L19.4627 104.922C19.1835 104.483 18.8644 104.084 18.5453 103.725C18.3059 105.002 17.6677 107.595 16.3115 113.063C16.2716 113.222 16.1918 113.382 15.9924 113.501L11.6445 116.614Z"
+                    fill="#CC0102" />
+                <path
+                    d="M11.2455 98.7363C11.2056 98.9359 11.2455 99.0955 11.3651 99.2551C11.4449 99.4547 11.6443 99.5744 11.8438 99.6143C11.8438 99.6143 11.8837 99.6542 11.9635 99.6542C12.482 99.7739 14.8354 100.372 17.1889 102.487C17.6276 102.887 18.0664 103.286 18.4653 103.764C18.7844 104.164 19.1035 104.563 19.3827 104.962C19.5024 105.161 19.7816 105.281 19.9811 105.281C20.1406 105.281 20.3002 105.241 20.4198 105.161C20.5794 105.002 20.6991 104.802 20.739 104.563C20.739 104.403 20.6991 104.243 20.5794 104.084C17.6276 99.8936 13.9579 98.6166 12.5219 98.2575C12.4022 98.2176 12.3623 98.2176 12.2427 98.1777C12.0831 98.1378 12.0033 98.1378 11.9635 98.1378C11.6443 98.058 11.3252 98.2974 11.2455 98.7363Z"
+                    fill="white" />
+                <path
+                    d="M-8.25997 137.245C-5.94643 131.259 7.05727 130.581 7.61571 130.541C7.73538 130.541 7.77526 130.541 7.89493 130.581C8.09437 129.543 8.3337 128.506 8.45337 127.508C8.41348 127.508 8.41348 127.508 8.37359 127.508C8.25393 127.508 -5.78688 127.029 -7.86109 134.172C-8.14031 135.29 -8.25997 136.287 -8.25997 137.245Z"
+                    fill="#CC0102" />
+                <path
+                    d="M-7.74141 127.548C-3.99188 122.64 3.90608 121.203 6.49884 120.804C5.86062 120.086 5.14263 119.368 4.34486 118.609C4.22519 118.609 -6.02619 119.208 -7.18296 124.875C-7.3824 125.872 -7.58186 126.75 -7.74141 127.548Z"
+                    fill="#CC0102" />
+                <path
+                    d="M-1.00031 113.861C-0.960421 113.9 -0.880646 113.98 -0.840757 114.02C0.0766821 114.738 1.47278 115.936 2.90877 117.252C3.38744 117.731 3.82622 118.13 4.34477 118.649C5.14254 119.407 5.82065 120.126 6.49875 120.844C6.89764 121.323 7.25664 121.762 7.57574 122.201C7.97463 122.799 8.29374 123.358 8.45329 123.757C8.61285 124.356 8.65274 125.154 8.61285 126.072C8.57296 126.511 8.53307 127.029 8.45329 127.548C8.33363 128.506 8.0943 129.583 7.89486 130.621C7.77519 131.14 7.69541 131.619 7.57574 132.097C7.53586 132.217 7.53586 132.377 7.49597 132.496C7.25664 133.454 7.09708 134.372 6.93753 135.21C6.85775 135.689 6.77798 136.088 6.73809 136.487C6.61842 137.205 6.57853 137.804 6.61841 138.323C6.69819 139.839 7.57575 141.036 9.01174 141.635C9.61007 141.874 10.2882 142.034 10.9264 142.034C11.8438 142.034 12.7214 141.794 13.4793 141.355C13.7585 141.236 13.9978 141.036 14.1973 140.837C16.1917 139.121 15.8327 129.823 15.5535 125.553C15.5136 124.835 15.4737 124.236 15.4338 123.837C15.354 123.398 14.995 123.119 14.5961 123.159C14.1973 123.198 13.8782 123.558 13.918 123.997C13.918 124.076 13.918 124.156 13.9579 124.236V124.276C14.5164 131.14 14.3568 138.722 13.2 139.719C12.2427 140.597 10.7668 140.797 9.57018 140.278C9.05162 140.078 8.13419 139.52 8.0943 138.283C8.05441 137.165 8.49318 135.09 8.97185 132.856C9.72973 129.264 10.5275 125.553 9.88929 123.398C9.01174 120.485 3.02844 115.337 0.714898 113.461C0.316011 113.102 0.0367889 112.863 -0.122766 112.783C-0.441875 112.544 -0.920532 112.584 -1.19975 112.903C-1.39919 113.102 -1.35931 113.581 -1.00031 113.861Z"
+                    fill="white" />
+                <path
+                    d="M3.22803 96.1026C3.46737 96.1026 3.66682 96.0228 3.78649 95.8632C3.94604 95.7036 4.02582 95.504 3.98593 95.3045C3.70671 91.7529 -3.47326 52.2065 -11.3313 31.0565C-19.3489 9.58732 -29.1615 1.96535 -29.6003 1.68601C-29.6801 1.6062 -29.7998 1.56629 -29.9194 1.56629L-37.219 0.00997639C-37.4584 -0.0299292 -37.7376 0.049882 -37.937 0.24941L-40.809 3.44186C-40.9686 3.64138 -41.0484 3.92072 -40.9686 4.20006L-10.6133 92.3116C-10.5734 92.5111 -10.4139 92.6707 -10.2144 92.7505C-10.0549 92.8304 -9.81554 92.8304 -9.6161 92.7905L-6.74413 91.713C3.06848 96.1026 3.06848 96.1026 3.22803 96.1026ZM-30.3981 2.96299C-29.2014 3.92072 -20.1467 11.8619 -12.7274 31.5753C-5.46769 51.0891 1.19372 86.3656 2.3106 94.1472C0.116725 93.1496 -4.39069 91.0745 -6.42501 90.1567C-6.58456 90.0769 -6.8239 90.037 -7.02334 90.1168L-9.45655 91.0346L-39.373 4.08035L-37.0994 1.6062L-30.3981 2.96299Z"
+                    fill="white" />
+                <path
+                    d="M71.0385 139.28C71.4374 139.28 71.7565 139.001 71.7964 138.602C72.9532 128.067 68.3261 125.713 68.1267 125.633C67.7278 125.433 67.289 125.593 67.1295 125.992C66.9699 126.351 67.0896 126.79 67.4885 126.99C67.5682 127.029 71.3577 129.144 70.3206 138.442C70.2807 138.881 70.5998 139.241 70.9987 139.28H71.0385Z"
+                    fill="white" />
+                <path
+                    d="M57.3169 160.47C57.4366 160.47 57.5961 160.43 57.7158 160.35C66.97 154.524 70.0813 146.384 66.9301 136.168C66.8104 135.769 66.3716 135.569 65.9727 135.689C65.5739 135.809 65.3345 136.208 65.4941 136.607C68.4458 146.224 65.6536 153.527 56.8781 159.073C56.5191 159.313 56.4394 159.752 56.6388 160.111C56.8382 160.35 57.0776 160.47 57.3169 160.47Z"
+                    fill="white" />
+                <path
+                    d="M36.2556 161.827C36.6146 161.827 36.9337 161.548 36.9736 161.189C38.1703 153.527 32.7055 147.9 29.7538 144.867C29.3948 144.508 29.0358 144.149 28.7965 143.87C28.5172 143.55 28.0386 143.55 27.7195 143.83C27.4004 144.109 27.4004 144.588 27.6796 144.907C27.9588 145.187 28.2779 145.546 28.6768 145.945C31.469 148.778 36.5747 154.046 35.4978 160.949C35.4579 161.348 35.7371 161.747 36.136 161.827C36.2158 161.827 36.2158 161.827 36.2556 161.827Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <div class="runer">
+            <img loading="lazy" src="./Assets/Images/Group 296.png" alt="">
+        </div>
+    </footer>
+    <!-- footer component ends here -->
+
+    <!-- Modal component starts here -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">IND VS PAK</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/JkpplGSK7_4?si=GhJg-BLIYt1NpoMX" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal component ends here -->
+
+     <!-- login singup modal component starts here -->
+     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog login-modal-head">
+            <div class="modal-content">
+                <div class="modal-header login-modal">
+                    <h5 class="modal-title" id="exampleModalLabel1">Sign in to continue
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input id="mobileNumber" type="number" placeholder="Mobile Number">
+                    <button type="submit" id="submitButton">CONTINUE</button>
+
+                    <h4 class="oc-continue"><span>OR CONTINUE WITH</span></h4>
+
+                    <div class="login-auth">
+                        <div><img src="./Assets/Icons/fb.webp" alt=""></div>
+                        <div><img src="./Assets/Icons/google.webp" alt=""></div>
+                    </div>
+
+                    <p class="toc">By logging in, you agree to our <a href="">terms & conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login signup modal component ends here -->
+
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="./Assets/JS/jquery.min.js"></script>
+
+    <!-- Owl carousel -->
+    <!-- <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script> -->
+    <script src="./Assets/JS/owl.carousel.min.js"></script>
+
+    <script src="./Assets/JS/OwlCarousel.js"></script>
+    <!-- Owl carousel -->
+
+    <!-- Slick -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./Assets/JS/slick.min.js"></script>
+    <script src="./Assets/JS/jquery-migrate.min.js"></script>
+
+    <!-- Active Link script / Onscroll Header Bg / Shimmer Animation -->
+    <script src="./Assets/JS/Active.js"></script>
+
+    <script src="./Assets/JS/Loading.js"></script>
+</body>
+
+</html>
