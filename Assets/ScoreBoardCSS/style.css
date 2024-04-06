@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    transition: .3s ease-in;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+/* Resetting css */
+
+/* font family including */
+@font-face {
+    font-family: Saira_Light;
+    src: url('../Fonts/Saira-Light.ttf');
+}
+
+@font-face {
+    font-family: Saira_Regular;
+    src: url('../Fonts/Saira-Regular.ttf');
+}
+
+@font-face {
+    font-family: Saira_Medium;
+    src: url('../Fonts/Saira-Medium.ttf');
+}
+
+@font-face {
+    font-family: Saira_SemiBold;
+    src: url('../Fonts/Saira-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Saira_Bold;
+    src: url('../Fonts/Saira-Bold.ttf');
+}
+
+@font-face {
+    font-family: Saira_Medium_Italic;
+    src: url('../Fonts/Saira-MediumItalic.ttf');
+}
+
+/* font family including */
+
+/* scrollbar change css */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #757575 #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* opponent section css starts here */
+.opponent-section {
+    background-color: #102C6D;
+    padding: 40px 20px;
+}
+
+.opponent-wrapper {
+    max-width: 1180px !important;
+    margin: auto;
+}
+
+.opponent-section>.container>h3 {
+    font-family: 'Saira_SemiBold';
+    color: #9fa3a7;
+    font-size: 18px;
+}
+
+.opponent-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.opponent-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.opponent-row>div>img {
+    width: 60px;
+    height: 60px;
+}
+
+.opponent-row>div>h4 {
+    color: #9fa3a7;
+    font-family: 'Saira_Medium';
+    font-size: 28px;
+    margin-bottom: 0rem;
+}
+
+.opponent-row>div>p {
+    color: #9fa3a7;
+    margin-bottom: 0rem;
+    font-family: 'Saira_Medium';
+    font-size: 28px;
+}
+
+.opponent-row>div>p>span {
+    font-family: 'Saira_Regular' !important;
+    font-size: 16px;
+}
+
+.opponent-grid-row {
+    padding-top: 40px;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.opponent-desc {
+    padding: 0px 40px;
+}
+
+.opponent-desc>h4 {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: 'Saira_SemiBold';
+}
+
+@media screen and (max-width: 992px) {
+    .opponent-desc {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .opponent-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .flex-end,
+    .opponent-row {
+        justify-content: center;
+    }
+
+    .flex-end {
+        flex-direction: row-reverse;
+    }
+}
+
+/* opponent section css ends here */
+
+/* tab module section css starts here */
+.tab-module-row {
+    background-color: #102C6D;
+    border-top: 1px solid rgba(159, 163, 167, .1);
+    padding-top: 10px;
+}
+
+.tab-module-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: fit-content;
+    gap: 10px;
+}
+
+.tab-module-grid-row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-module-grid-row>div>p {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.tab>p {
+    border-bottom: 2px solid transparent;
+    transition: .3s ease-in-out;
+}
+
+.info-active>p {
+    border-bottom: 2px solid #ff7575;
+}
+
+/* tab module section css ends here */
+
+/* scorecard css starts here */
+.live-info-grid-dividend-row {
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.live-info-grid-dividend-row>div>h4 {
+    font-family: 'Saira_SemiBold';
+    font-size: 28px;
+    color: #102C6D;
+}
+
+.live-info-grid-dividend-row>div:nth-child(1) {
+    border-right: 1px solid rgba(159, 163, 167, .1);
+}
+
+.switch-team-tab-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    max-width: fit-content;
+    margin-top: 20px;
+}
+
+.switch-team-tab-grid-row>div {
+    border: 1px solid rgba(24, 96, 166, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    gap: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.opponent-active {
+    background-color: rgba(24, 96, 166, 0.08);
+}
+
+.switch-team-tab-grid-row>div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.switch-team-tab-grid-row>div>div>p {
+    margin-bottom: 0rem;
+}
+
+.row-left>p:nth-child(2),
+.row-right>p:nth-child(1) {
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+}
+
+.row-right>p:nth-child(2) {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.switch-team-tab-grid-row>div>div>img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 718px) {
+    .live-info-grid-dividend-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .switch-team-tab-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+
+/* table module css starts here */
+.table-container-table {
+    width: 80%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+
+.table-container-table>table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-container-table>table>thead>th,
+.table-container-table>table>tbody>tr>td {
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.table-container-table>table>thead>tr>th {
+    font-family: 'Saira_Medium';
+    color: #999;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px dotted #ddd;
+}
+
+
+.name-column-table-table {
+    width: 20%;
+}
+
+.equal-width-columns {
+    width: 6%;
+}
+
+.series-column {
+    width: 12%;
+    cursor: pointer;
+}
+
+.series-details {
+    display: none;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.arrow-down {
+    display: inline-block;
+}
+
+
+.opponent-wrapper>h3{
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+    padding: 50px 0px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+thead{
+    background-color: #f9f9f9;
+}
+/* table module css ends here */
+
+/* scorecards css ends here */
+
+/* Match info grid css starts here */
+.match-info-grid-row{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+    max-width: fit-content;
+
+}
+
+.match-info-grid-row>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.match-info-grid-row>div>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow-clip-margin: unset;
+    overflow: hidden;
+}
+
+.match-info-grid-row>div>p{
+    margin-bottom: 0rem;
+}
+
+.match-info-grid-row>div>p:nth-child(1){
+    color: #4a4a4a;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.match-info-grid-row>div>p:nth-child(2){
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+    color: #1c1c1c;
+}
+
+.match-info-row{
+    border-bottom: 1px solid rgb(218,218,218,0.5);
+    padding-bottom: 20px;
+}
+
+.address-ul{
+    margin-top: 25px;
+}
+
+.address-ul>li{
+    margin-bottom: 10px;
+}
+
+.address-ul>li:nth-child(1){
+    list-style-image: url('../ScoreBoardAssets/Icons/calender.svg');
+    font-family: 'Saira_Medium';
+    color: #1c1c1c;
+}
+
+.address-ul>li:nth-child(2){
+    list-style-image: url('../ScoreBoardAssets/Icons/location.svg');
+    font-family: 'Saira_Medium';
+    color: #102C6D;
+}
+
+.address-ul>li>span{
+    position: relative;
+    top: -6px;
+}
+/* Match info grid css ends here */
