@@ -221,6 +221,7 @@ html {
 
 .live-info-grid-dividend-row>div:nth-child(1) {
     border-right: 1px solid rgba(159, 163, 167, .1);
+    padding-right: 20px;
 }
 
 .switch-team-tab-grid-row {
@@ -290,11 +291,12 @@ html {
 
 /* table module css starts here */
 .table-container-table {
-    width: 80%;
+    width: 100%;
     white-space: nowrap;
     overflow-x: auto;
     margin-top: 20px;
 }
+
 
 
 .table-container-table>table {
@@ -348,7 +350,7 @@ html {
 }
 
 
-.opponent-wrapper>h3{
+.opponent-wrapper>h4{
     font-family: 'Saira_Medium';
     font-size: 18px;
     padding: 50px 0px 0px 0px;
@@ -431,4 +433,45 @@ thead{
     position: relative;
     top: -6px;
 }
+
+.match-info-heading{
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+    padding: 40px 0px 10px 0px;
+}
+
+.match-info-heading>span{
+    color: #999;
+}
+
+.icon-table{
+    width: 50px;
+}
+
+
+.right-icon-table{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.left-icon-table{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.center-icon-table{
+    align-items: center;
+    justify-content: center;
+}
+
+.left-icon-table,.right-icon-table,.center-icon-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-icon-table-row,.right-icon-table-row{
+    flex-direction: row !important;
+    align-items: center;
+}
+
 /* Match info grid css ends here */
