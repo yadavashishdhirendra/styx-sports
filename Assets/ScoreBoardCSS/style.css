@@ -208,7 +208,7 @@ html {
 /* scorecard css starts here */
 .live-info-grid-dividend-row {
     display: grid;
-    grid-template-columns: 3.5fr 2fr;
+    grid-template-columns: 765px 2fr;
     margin-top: 30px;
     gap: 15px;
 }
@@ -541,7 +541,8 @@ thead {
     border-radius: 2px;
 }
 
-.commentary-active {
+.commentary-active,
+.playing-active {
     background-color: rgba(110, 180, 239, .08) !important;
     color: #6eb4ef;
     border-radius: 2px;
@@ -827,7 +828,7 @@ thead {
 
 .run-bg {
     background-color: #9e6105;
-    color: white;
+    color: white !important;
 }
 
 .wicket {
@@ -839,7 +840,7 @@ thead {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white !important;
     font-family: 'Saira_Medium';
     font-size: 14px;
 }
@@ -987,16 +988,506 @@ thead {
     padding: 10px 10px;
 }
 
+canvas {
+    width: 90% !important;
+    height: initial !important;
+}
+
 
 @media screen and (max-width: 640px) {
     .venue-stats-grid-row {
         display: flex;
         flex-direction: column;
     }
-    canvas{
-        width: 100% !important;
-        height: initial !important;
-    }
 }
 
 /* Venue stats grid row */
+
+/* player of the match grid row */
+.player-of-match-grid-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.left-side-player-icons {
+    position: relative;
+    top: 0;
+}
+
+.player-head {
+    font-family: 'Saira_Medium';
+    font-size: 22px;
+}
+
+.left-side-player-icons>img:nth-child(1) {
+    position: relative;
+    top: 0;
+    width: 80px;
+}
+
+.left-side-player-icons>img:nth-child(2) {
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 80px;
+}
+
+.player-info-lef>p {
+    margin-bottom: 0rem;
+}
+
+.player-info-lef>p:nth-child(1) {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+}
+
+.player-info-lef>p:nth-child(2),
+.player-info-lef>p:nth-child(3) {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+/* player of the match grid row */
+
+
+/* player info header live section css starts here */
+.over-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.over-box img {
+    max-width: 76px;
+    margin: auto;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-cloth {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.name-box a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.name-box p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Saira_SemiBold';
+}
+
+.over-boxinclude {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.batsmen-score .stscore {
+    margin-bottom: 0;
+    margin-left: .25em;
+    margin-right: 1em;
+    font-size: 14px;
+    font-family: 'Saira_Regular';
+}
+
+.strike-rate>span {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.contover>span,
+.over-ball {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.p-name {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+}
+
+.p-score>span {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.batsmen-score {
+    display: flex;
+    align-items: center;
+}
+
+.batsmen-score .stscores {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Saira_SemiBold';
+}
+
+.itedes {
+    margin-left: 1.25em;
+    margin-top: 2em;
+}
+
+.batsmen-career-wrapper {
+    width: 248px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+    border-radius: 6px;
+    padding: 1em;
+    display: none;
+    position: absolute;
+    top: 84px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.over-boxinclude:hover .batsmen-career-wrapper {
+    display: block;
+}
+
+.svgscor svg {
+    width: 18px;
+    height: 18px;
+}
+
+.playing-batsmen-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-wrapper a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4a4a4a;
+}
+
+.player-wrapper .p-score {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.player-wrapper .p-score .styleplyer {
+    color: #4a4a4a;
+    margin-left: .5em;
+    font-size: 14px;
+}
+
+.batsmen-career-wrapper hr {
+    color: #dadada;
+    margin: 10px 0px;
+}
+
+.player-strike-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ptnr-info {
+    margin-top: 10px;
+    text-align: center;
+    transition: width .5s;
+}
+
+#secondDiv {
+    transition: width .5s;
+    width: 125px;
+}
+
+
+.partner-ship-data>span {
+    font-family: 'Saira_Regular';
+    font-size: 18px;
+}
+
+.partner-ship-data span:first-child {
+    margin-right: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #9e6105;
+}
+
+.partner-ship-data span:nth-child(2) {
+    font-size: 12px;
+    color: #4a4a4a;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.plus-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f9f9f9;
+    color: #1860a6;
+    margin: 10px auto;
+
+}
+
+.plus-circle i {
+    font-size: 10px;
+}
+
+.itemsc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-box a:hover {
+    text-decoration: underline;
+}
+
+.secomdbox {
+    border-right: 1px solid #dadada;
+    padding-right: 15px;
+}
+
+.shdd {
+    text-align: end;
+}
+
+@media screen and (max-width: 1080px) {
+    .over-boxinclude {
+        display: initial;
+    }
+
+    .secomdbox {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .itedes {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .name-box p {
+        font-size: 12px;
+        width: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .batsmen-score .stscores {
+        font-size: 14px;
+    }
+
+    .over-box {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+.atsbot {
+    margin: 25px 0px;
+    border: 1px solid #dadada;
+}
+
+.contover {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+
+
+
+.over-ball {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin: .25em 0 .25em .75em;
+    color: #4a4a4a;
+    border: 1px solid #dadada;
+}
+
+.total {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 6px;
+    font-family: 'Saira_Regular';
+}
+
+.contover span {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+
+
+
+.overs-slide {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overs-slide ::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overs-slide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.overout {
+    box-shadow: 0 4px 40px rgba(0, 0, 0, .05);
+}
+
+.player-table-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.player-table-heading>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+}
+
+.player-table-heading>p>span {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.player-table-heading>img {
+    width: 30px;
+}
+
+/* player info header live section css ends here */
+
+/* Match Module Right screen css starts here */
+.win-toss {
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    gap: 8px;
+}
+
+.win-toss>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+}
+
+.playing-team {
+    font-family: 'Saira_Medium';
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.tab-module-players {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.tab-module-players>div {
+    border: 1px solid #f9f9f9;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-row-playing-module {
+    margin-top: 30px;
+}
+
+.tab-module-players>div>p {
+    margin-bottom: 0rem;
+}
+
+.decr-width>img:nth-child(1) {
+    width: 55px !important;
+}
+
+.decr-width>img:nth-child(2) {
+    width: 51px !important;
+    bottom: -7px !important;
+    left: 2px !important;
+}
+
+.grid-row-playing-module {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+}
+
+.grid-row-playing-module>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.player-module-para>p:nth-child(1) {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+    margin-bottom: 0rem;
+}
+
+.player-module-para>p:nth-child(2) {
+    font-family: 'Saira_Medium';
+    font-size: 12px;
+    color: #4a4a4a;
+    margin-bottom: 0rem;
+}
+
+/* Match Module Right screen css ends here */

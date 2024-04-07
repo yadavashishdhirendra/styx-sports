@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hello, world!</title>
+    <style>
+        .over-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .over-box img {
+            max-width: 76px;
+            margin: auto;
+        }
+
+        .image-section {
+            position: relative;
+        }
+
+        .image-cloth {
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+        }
+
+        .name-box a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+        .name-box p {
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .over-boxinclude {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .batsmen-score .stscore {
+            margin-bottom: 0;
+            margin-left: .25em;
+            margin-right: 1em;
+            font-size: 14px;
+        }
+
+        .batsmen-score {
+            display: flex;
+            align-items: center;
+        }
+
+        .batsmen-score .stscores {
+            margin-bottom: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        .itedes {
+            margin-left: 1.25em;
+            margin-top: 2em;
+        }
+
+        .batsmen-career-wrapper {
+            width: 248px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+            border-radius: 6px;
+            padding: 1em;
+            display: none;
+            position: absolute;
+            top: 84px;
+            z-index: 9;
+            cursor: pointer;
+        }
+
+        .over-boxinclude:hover .batsmen-career-wrapper {
+            display: block;
+        }
+
+        .svgscor svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .playing-batsmen-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .player-wrapper a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 100%;
+            color: #4a4a4a;
+        }
+
+        .player-wrapper .p-score {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        .player-wrapper .p-score .styleplyer {
+            color: #4a4a4a;
+            margin-left: .5em;
+            font-size: 14px;
+        }
+
+        .batsmen-career-wrapper hr {
+            color: #dadada;
+            margin: 10px 0px;
+        }
+
+        .player-strike-wrapper {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .ptnr-info {
+            margin-top: 10px;
+            text-align: center;
+            transition: width .5s;
+        }
+
+        #secondDiv {
+            transition: width .5s;
+            width: 125px;
+        }
+
+        .partner-ship-data span:first-child {
+            margin-right: 4px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: #9e6105;
+        }
+
+        .partner-ship-data span:nth-child(2) {
+            font-size: 12px;
+            color: #4a4a4a;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+        }
+
+        .plus-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #f9f9f9;
+            color: #1860a6;
+            margin: 10px auto;
+
+        }
+
+        .plus-circle i {
+            font-size: 10px;
+        }
+
+        .itemsc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .p-bar.p-bar-first {
+            display: flex;
+            justify-content: center;
+        }
+
+        .p-bar {
+            height: 6px;
+            border-radius: 4px;
+        }
+
+
+
+
+        .p-bar.b-one {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 64px;
+            background: #6cb240;
+        }
+
+        .p-bar {
+            height: 6px;
+            border-radius: 4px;
+        }
+
+
+        .p-bar.b-two {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            width: 4px;
+            background: #a64040;
+        }
+
+        .name-box a:hover {
+            text-decoration: underline;
+        }
+
+        .secomdbox {
+            border-right: 1px solid #dadada;
+            padding-right: 15px;
+        }
+
+        .shdd {
+            text-align: end;
+        }
+
+        @media screen and (max-width: 1080px) {
+            .over-boxinclude {
+                display: initial;
+            }
+
+            .secomdbox {
+                border-right: 0;
+                padding-right: 0;
+            }
+
+            .itedes {
+                margin-top: 1em;
+            }
+        }
+
+        @media screen and (max-width: 568px) {
+            .name-box p {
+                font-size: 12px;
+                width: 60px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .batsmen-score .stscores {
+                font-size: 14px;
+            }
+
+            .over-box {
+                width: 100%;
+                overflow-x: auto;
+            }
+        }
+
+        .atsbot {
+            margin: 25px 0px;
+            border: 1px solid #dadada;
+        }
+
+        .contover {
+            display: flex;
+            align-items: center;
+            margin: 0px 20px;
+        }
+
+
+
+
+        .over-ball {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            padding: 1em;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            margin: .25em 0 .25em .75em;
+            color: #4a4a4a;
+            border: 1px solid #dadada;
+        }
+
+        .total {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: 6px;
+        }
+
+        .contover span {
+            font-size: 16px;
+            color: #4a4a4a;
+        }
+
+        .highrun {
+            background-color: #9e6105;
+            color: #fff;
+        }
+
+
+
+        .overs-slide {
+            width: 100%;
+            overflow-x: auto;
+            display: flex;
+            white-space: nowrap;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .overs-slide ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .overs-slide {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .overout {
+            box-shadow: 0 4px 40px rgba(0, 0, 0, .05);
+        }
+
+        .lbout {
+            background-color: #aa0707;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="Comment-ary">
+        <div class="container">
+            <div class="over-box">
+                <div class="itemsc">
+                    <div class="over-boxinclude">
+                        <div class="image-section"><img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                            <img class="image-cloth"
+                                src="./Assets/ScoreBoardAssets/Icons/shirt.webp"
+                                alt="">
+                        </div>
+                        <div class="itedes">
+                            <div class="name-box">
+                                <a href="">
+                                    <p>
+                                        N Sultana</p>
+                                </a>
+                            </div>
+                            <div class="batsmen-score">
+                                <p class="stscores">32</p>
+                                <p class="stscore">(31)</p>
+                                <div class="svgscor">
+                                    <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.29852 3.89906L8.69002 5.11406L2.72977 11.0797H1.90087L0.101318 9.28016V8.45261L6.06157 2.49911L7.27657 2.89061L10.3546 0.0664062L10.8622 0.574006L11.3698 1.08161L8.29852 3.89906Z"
+                                            fill="#9e6105"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="batsmen-career-wrapper">
+                            <div class="upper-head">
+                                <div class="player-wrapper"><!----><a href="">
+                                        <div class="p-name">N Sultana</div>
+                                    </a><!---->
+                                    <div class="p-score"><span>32</span><span class="styleplyer">(31)</span></div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="player-strike-wrapper">
+                                <div class="strike-rate right-space"><span> 4s:
+                                    </span><span> 5 </span></div>
+                                <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                            </div><!---->
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ptnr-info" id="firstDiv">
+                    <div id="secondDivs" style="display:none;">
+                        <div class="partner-ship-data">
+                            <span>0</span>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                    <div class="plus-circle" onclick="toggleSecondDiv()" id="toggleBtn">
+                        <i id="iconElement" class="fa-solid fa-plus"></i>
+                    </div>
+                    <div>
+                        <div id="secondDiv" style="display:none;">
+                            <div class="p-bar p-bar-first w-value">
+
+                                <div class="p-bar b-one"></div>
+                                <div class="p-bar b-two"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="itemsc">
+                    <div class="over-boxinclude secomdbox">
+                        <div class="image-section"><img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                            <img class="image-cloth"
+                                src="./Assets/ScoreBoardAssets/Icons/shirt.webp"
+                                alt="">
+                        </div>
+                        <div class="itedes">
+                            <div class="name-box">
+                                <a href="">
+                                    <p>
+                                        F Trisna</p>
+                                </a>
+                            </div>
+                            <div class="batsmen-score">
+                                <p class="stscores">2</p>
+                                <p class="stscore">(8)</p>
+
+                            </div>
+                        </div>
+
+                        <div class="batsmen-career-wrapper">
+                            <div class="upper-head">
+                                <div class="player-wrapper"><!----><a href="">
+                                        <div class="p-name">F Trisna</div>
+                                    </a><!---->
+                                    <div class="p-score"><span>2</span><span class="styleplyer">(8)</span></div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="player-strike-wrapper">
+                                <div class="strike-rate right-space"><span> 4s:
+                                    </span><span> 5 </span></div>
+                                <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                            </div><!---->
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- 3rd-->
+                <div class="itemsc">
+                    <div class="over-boxinclude secomdbox">
+                        <div class="image-section">
+                            <img id="mgs" src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                            <img class="image-cloth" id="mgss"
+                                src="./Assets/ScoreBoardAssets/Icons/shirt.webp"
+                                alt="">
+                        </div>
+                        <div class="itedes " id="jbs" style="display: block;">
+                            <div class="name-box">
+                                <a href="">
+                                    <p>
+                                        G Wareham</p>
+                                </a>
+                            </div>
+                            <div class="batsmen-score shdd">
+                                <p class="stscores">2-1</p>
+                                <p class="stscore">(1.1)</p>
+
+                            </div>
+                        </div>
+
+                        <div class="batsmen-career-wrapper">
+                            <div class="upper-head">
+                                <div class="player-wrapper"><!----><a href="">
+                                        <div class="p-name">G Wareham</div>
+                                    </a><!---->
+                                    <div class="p-score"><span>2-1</span><span class="styleplyer">(1.1)</span></div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="player-strike-wrapper">
+                                <div class="strike-rate right-space"><span> 4s:
+                                    </span><span> 5 </span></div>
+                                <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                            </div><!---->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="atsbot">
+            <div class="overs-slide">
+                <div class="contover">
+                    <span>16th Over:</span>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">1</div>
+                    <div class="over-ball highrun">4</div>
+                    <div class="total">=6</div>
+                </div>
+                <!-- 2nd -->
+                <div class="contover">
+                    <span>16th Over:</span>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">1</div>
+                    <div class="over-ball highrun">4</div>
+                    <div class="total">=6</div>
+                </div>
+                <!-- 3rd -->
+                <div class="contover">
+                    <span>16th Over:</span>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">0</div>
+                    <div class="over-ball">1</div>
+                    <div class="over-ball highrun">4</div>
+                    <div class="total">=6</div>
+                </div>
+                <!-- 4th -->
+                <div class="contover">
+                    <span>16th Over:</span>
+                    <div class="over-ball lbout">0</div>
+                    <div class="over-ball overout">0</div>
+                    <div class="over-ball overout">0</div>
+                    <div class="over-ball overout">0</div>
+                    <div class="over-ball overout">1</div>
+                    <div class="over-ball overout">4</div>
+                    <div class="total">=0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function toggleSecondDiv() {
+            var secondDiv = document.getElementById("secondDiv");
+            var secondDivs = document.getElementById("secondDivs");
+            var iconElement = document.getElementById("iconElement");
+            var jbs = document.getElementById("jbs");
+            var mgs = document.getElementById("mgs");
+            var mgss = document.getElementById("mgss");
+
+            if (secondDiv.style.display === "none") {
+                secondDiv.style.display = "block";
+                secondDivs.style.display = "block";
+                jbs.style.display = "none";
+                mgs.style.opacity = ".5"; //
+                mgss.style.opacity = ".5"; //
+                // Change the icon to minus when secondDiv is shown
+                iconElement.className = "fa-solid fa-minus";
+            } else {
+                secondDiv.style.display = "none";
+                secondDivs.style.display = "none";
+                // Change the icon to plus when secondDiv is hidden
+                iconElement.className = "fa-solid fa-plus";
+                jbs.style.display = "block";
+                mgs.style.opacity = "1"; // Set opacity back to 100%
+                mgss.style.opacity = "1"; // Set opacity back to 100%
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const oversSlide = document.querySelector('.overs-slide');
+            oversSlide.scrollLeft = oversSlide.scrollWidth; // Scroll to the end
+        });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
