@@ -73,6 +73,7 @@ html {
 .opponent-section {
     background-color: #102C6D;
     padding: 40px 20px;
+    margin-top: 4.45rem;
 }
 
 .opponent-wrapper {
@@ -1490,7 +1491,7 @@ canvas {
     margin-bottom: 0rem;
 }
 
-.on-bench-player{
+.on-bench-player {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1501,7 +1502,7 @@ canvas {
     cursor: pointer;
 }
 
-.on-bench-player>div>p{
+.on-bench-player>div>p {
     margin-bottom: 0rem;
     font-family: 'Saira_SemiBold';
     font-size: 16px;
@@ -1509,19 +1510,19 @@ canvas {
 }
 
 
-.rotate{
+.rotate {
     transform: rotate(180deg) !important;
     transition: transform 0.3s ease !important;
 }
 
 
-footer{
-    background-color: #1860a6;
+footer {
+    background-color: #102C6D;
     width: 100%;
     margin-top: 8rem;
 }
 
-footer>p{
+footer>p {
     color: white;
     font-family: 'Saira_Medium';
     text-align: center;
@@ -1529,4 +1530,80 @@ footer>p{
     margin-bottom: 0rem;
     padding: 8px 10px;
 }
+
 /* Match Module Right screen css ends here */
+
+/* navbar css */
+.nav-link {
+    font-family: 'Saira_Light';
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: #102C6D;
+}
+
+.menu-icon {
+    color: white;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .dropdown-menu>div:nth-child(1) {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: fixed;
+        top: 65px;
+        border-radius: 0px;
+        background-color: #1860a6;
+        padding: 10px 20px;
+    }
+
+    .dropdown-menu>div:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        max-width: 80%;
+        width: 80%;
+        overflow-x: auto;
+        margin: auto;
+    }
+
+    .dropdown-menu>div:nth-child(2) {
+        display: none;
+    }
+
+    .dropdown-menu>div>li>a>img {
+        width: 145px;
+        height: 152px;
+    }
+
+    .dropdown-item {
+        padding: 20px 10px;
+        transition: .3s ease-in;
+        border-radius: 5px;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:active {
+        background-color: rgba(18, 19, 19, .4) !important;
+        padding: 20px 10px !important;
+    }
+}
+
+/* navbar css */
