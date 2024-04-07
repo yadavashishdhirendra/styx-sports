@@ -92,3 +92,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 // Playing Tab Module
+
+function openBenchPlayer() {
+    var toggle = document.getElementById('onBench')
+    var chevron = document.getElementById('chevron');
+    if (toggle.style.display === "none") {
+        toggle.style.display = 'block'
+        chevron.classList.add('rotate');
+    }
+    else {
+        toggle.style.display = 'none'
+        chevron.classList.remove('rotate')
+    }
+}

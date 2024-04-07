@@ -1490,4 +1490,27 @@ canvas {
     margin-bottom: 0rem;
 }
 
+.on-bench-player{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #f3f3f3;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.on-bench-player>div>p{
+    margin-bottom: 0rem;
+    font-family: 'Saira_SemiBold';
+    font-size: 16px;
+    color: #1860a6;
+}
+
+
+.rotate{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
 /* Match Module Right screen css ends here */
