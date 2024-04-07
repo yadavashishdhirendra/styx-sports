@@ -12,3 +12,10 @@ function toggleAccordion(element) {
         }
     }
 }
+
+
+var currentYear = new Date().getFullYear();
+
+// Update the copyright text
+var copyrightText = document.getElementById("copyright");
+copyrightText.innerHTML += " " + currentYear;

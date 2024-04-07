@@ -1510,7 +1510,23 @@ canvas {
 
 
 .rotate{
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
+    transform: rotate(180deg) !important;
+    transition: transform 0.3s ease !important;
+}
+
+
+footer{
+    background-color: #1860a6;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+footer>p{
+    color: white;
+    font-family: 'Saira_Medium';
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0rem;
+    padding: 8px 10px;
 }
 /* Match Module Right screen css ends here */
