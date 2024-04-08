@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -47,11 +48,6 @@ html {
 /* font family including */
 
 /* scrollbar change css */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #757575 #ffffff;
-    scroll-behavior: smooth;
-}
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -1379,6 +1375,31 @@ canvas {
     /* Firefox */
 }
 
+
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-btn {
+    left: 80px;
+    font-size: 2rem;
+    color: white;
+}
+
+.right-btn {
+    right: 80px;
+    font-size: 2rem;
+    color: white;
+}
+
 .overout {
     box-shadow: 0 4px 40px rgba(0, 0, 0, .05);
 }
@@ -1573,13 +1594,18 @@ header {
         padding: 10px 20px;
     }
 
+    .dropdown-menu{
+        position: relative;
+        top: 0;
+    }
+
     .dropdown-menu>div:nth-child(1) {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
         max-width: 80%;
-        width: 80%;
+        width: 1180px;
         overflow-x: auto;
         margin: auto;
     }
@@ -1604,6 +1630,139 @@ header {
         background-color: rgba(18, 19, 19, .4) !important;
         padding: 20px 10px !important;
     }
+
+    .hide-scrollbar{
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+    }
 }
 
 /* navbar css */
+
+
+/* Mobile Menu css starts here */
+
+@media screen and (max-width: 1079px) {
+    #navbarSupportedContent{
+        display: none;
+    }
+}
+#menu {
+    position: fixed;
+    background-color: #222;
+    height: 100%;
+    z-index: 10;
+    width: 280px;
+    color: #bbb;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
+    font-family: 'Saira_Medium';
+    z-index: 999999999;
+  }
+
+  #menu ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0
+  }
+
+  #menu ul li {
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  #menu>ul>li>a {
+    border-left: 4px solid #222;
+  }
+
+  #menu ul li a {
+    color: inherit;
+    font-size: 16px;
+    display: block;
+    padding: 12px 0 12px 7px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  .input-sidebar>input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 42px;
+    border-radius: 5px;
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+  }
+
+  #menu ul a i {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 3px;
+    width: 20px;
+  }
+
+  #menu ul a i[class*='fa-caret'] {
+    float: right;
+  }
+
+  #menu ul a:hover,
+  #menu ul a.active {
+    background-color: #111;
+    border-left-color: #1860a6;
+    color: #1860a6;
+  }
+
+  #menu ul a:hover i:first-child {
+    color: #1860a6;
+  }
+
+  /* Submenu */
+
+  #menu ul li a.active+ul {
+    display: block
+  }
+
+  #menu ul li ul {
+    margin-top: 0;
+    display: none;
+  }
+
+  #menu ul li ul li {
+    border-bottom: none;
+  }
+
+  #menu ul li ul li a {
+    padding-left: 30px;
+  }
+
+  #menu ul li ul li a:hover {
+    background-color: #1A1A1A;
+  }
+
+  /* /Submenu */
+
+
+  /* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+  .left {
+    left: -280px;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  #container {
+    padding: 50px;
+  }
+/* Mobile Menu css ends here */
