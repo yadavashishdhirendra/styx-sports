@@ -272,6 +272,12 @@ html {
     height: 30px;
 }
 
+@media screen and (max-width: 1080px) {
+    .live-info-grid-dividend-row{
+        grid-template-columns: 600px 2fr;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .live-info-grid-dividend-row {
         /* grid-template-columns: 1fr; */
@@ -1541,6 +1547,7 @@ footer {
     background-color: #102C6D;
     width: 100%;
     margin-top: 8rem;
+    margin-bottom: 3.99rem;
 }
 
 footer>p {
@@ -1766,3 +1773,43 @@ header {
     padding: 50px;
   }
 /* Mobile Menu css ends here */
+
+/* Bottom Navigation Grid css starts here */
+.bottom-navigation{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 8px 8px 8px;
+    box-shadow: inset -8px -8px 16px #fff,inset 8px 8px 16px rgba(55,84,170,.16)!important;
+}
+
+.bottom-navigation-grid-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.bottom-navigation-grid-row>div>p>i{
+    font-size: 18px;
+}
+
+.bottom-navigation-grid-row>div>p{
+    margin-bottom: 0rem;
+    text-align: center;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.bottom-navigation-wrapper{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .bottom-navigation-wrapper{
+        display: block;
+    }
+}
+/* Bottom Navigation Grid css ends here */
