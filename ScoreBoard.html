@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
 
     <!-- External CSS Link -->
-    <link rel="stylesheet" href="./Assets/ScoreBoardCSS/style.css">
+    <link rel="stylesheet" href="./Assets/ScoreBoardCSS/style.css?ver=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -114,7 +114,6 @@
     <!-- header component ends here -->
 
     <!-- Mobile Sidebar Component start here -->
-    <!-- menu vertical -->
     <nav id="menu" class="left">
         <div class="input-sidebar">
             <input type="text" placeholder="Search Players, Teams & Series">
@@ -132,7 +131,6 @@
             <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
         </ul>
     </nav>
-    <!-- /menu vertical -->
     <!-- Mobile Sidebar component ends here -->
 
     <!-- opponent section starts here -->
@@ -2941,59 +2939,22 @@
     <script src="./Assets/JS/jquery.min.js"></script>
 
     <!-- Tab Module Script -->
-    <script src="./Assets/ScoreBoardJS/TabModule.js"></script>
+    <script src="./Assets/ScoreBoardJS/TabModule.js?ver=1.0"></script>
 
     <!-- Table Accordion Script -->
-    <script src="./Assets/ScoreBoardJS/TableAccordion.js"></script>
+    <script src="./Assets/ScoreBoardJS/TableAccordion.js?ver=1.0"></script>
 
     <!-- Progress Bar Script -->
-    <script src="./Assets/ScoreBoardJS/ProgressBar.js"></script>
+    <script src="./Assets/ScoreBoardJS/ProgressBar.js?ver=1.0"></script>
 
     <!-- Chart Script -->
-    <script src="./Assets/ScoreBoardJS/Chart.js"></script>
+    <script src="./Assets/ScoreBoardJS/Chart.js?ver=1.0"></script>
 
     <!-- Live Player Toggle Script -->
-    <script src="./Assets/ScoreBoardJS/PlayerToggle.js"></script>
+    <script src="./Assets/ScoreBoardJS/PlayerToggle.js?ver=1.0"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            /////// Prevent closing from click inside dropdown
-            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-                element.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                });
-            })
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const scrollContainer = document.querySelector('.hide-scrollbar');
-            const leftBtn = document.querySelector('.left-btn');
-            const rightBtn = document.querySelector('.right-btn');
-
-            leftBtn.addEventListener('click', function () {
-                scrollContainer.scrollLeft -= 200; // Adjust the scroll amount as needed
-            });
-
-            rightBtn.addEventListener('click', function () {
-                scrollContainer.scrollLeft += 200; // Adjust the scroll amount as needed
-            });
-        });
-
-    </script>
-
-    <script>
-        $("#showmenu").click(function (e) {
-            e.preventDefault();
-            $("#menu").toggleClass("show");
-        });
-        $("#menu a").click(function (event) {
-            event.preventDefault();
-            if ($(this).next('ul').length) {
-                $(this).next().toggle('fast');
-                $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
-            }
-        });
-    </script>
+    <!-- Navigation Script -->
+    <script src="./Assets/ScoreBoardJS/Navigation.js?ver=1.0"></script>
 </body>
 
 </html>
