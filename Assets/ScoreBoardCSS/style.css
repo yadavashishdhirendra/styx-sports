@@ -1547,7 +1547,6 @@ footer {
     background-color: #102C6D;
     width: 100%;
     margin-top: 8rem;
-    margin-bottom: 3.99rem;
 }
 
 footer>p {
@@ -1810,6 +1809,9 @@ header {
 @media screen and (max-width: 992px) {
     .bottom-navigation-wrapper{
         display: block;
+    }
+    footer{
+        margin-bottom: 3.99rem;
     }
 }
 /* Bottom Navigation Grid css ends here */
