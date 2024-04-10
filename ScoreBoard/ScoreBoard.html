@@ -1,0 +1,2989 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061945" />
+    <title>ScoreBoard</title>
+
+    <!-- External CSS Link -->
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- header component starts here -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" src="./Assets/ScoreBoardAssets/Icons/logo.png" alt="">
+                </a>
+                <button id="showmenu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Streaming</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Series
+                            </a>
+                            <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="hide-scrollbar">
+                                    <button class="scroll-btn left-btn"><i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1FR.avif" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1HN.webp" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1IR.webp" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JS.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1GV.avif" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JS (1).png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <button class="scroll-btn right-btn"><i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+
+                                <div>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header component ends here -->
+
+    <!-- Mobile Sidebar Component start here -->
+    <nav id="menu" class="left">
+        <div class="input-sidebar">
+            <input type="text" placeholder="Search Players, Teams & Series">
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+            <li> <a href="#"><i class="fa fa-laptop"></i>Services <i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">AUSW VS BANW</a></li>
+                    <li><a href="#">T20 Series</a></li>
+                    <li><a href="#">Test Matches</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile Sidebar component ends here -->
+
+    <!-- opponent section starts here -->
+    <section class="opponent-section">
+        <div class="container opponent-wrapper">
+            <h3>AUSW vs BANW 3rd T20, AUSW vs BANW 2024</h3>
+
+            <!-- opponent grid component row starts here -->
+            <div class="opponent-grid-row">
+                <div>
+                    <div class="opponent-row">
+                        <div>
+                            <img src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                        </div>
+                        <div>
+                            <h4>BANW</h4>
+                            <p>78-10 <span>18.1</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opponent-desc">
+                    <h4>Australia Women won by 77 runs 🏆</h4>
+                </div>
+                <div>
+                    <div class="opponent-row flex-end">
+                        <div>
+                            <h4>BANW</h4>
+                            <p><span>20.0</span> 155-6</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/ScoreBoardAssets/Icons/1I.avif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- opponent grid component row ends here -->
+        </div>
+    </section>
+    <!-- opponent section ends here -->
+
+    <!-- Tab module section starts here -->
+    <section class="tab-module-row">
+        <div class="container opponent-wrapper">
+            <div class="tab-module-grid-row">
+                <div class="tab info-active" data-tab="match-info">
+                    <p>Match Info</p>
+                </div>
+                <div class="tab" data-tab="live-info">
+                    <p>Live</p>
+                </div>
+                <div class="tab" data-tab="scorecard-info">
+                    <p>Scorecard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tab module section ends here -->
+
+    <!-- Match Info component starts here -->
+    <section class="match-info-wrapper" style="display: block;">
+        <div class="container opponent-wrapper">
+            <!-- 70 30 component starts here -->
+            <div class="live-info-grid-dividend-row">
+                <div>
+                    <!-- match info header -->
+                    <div class="match-info-row">
+                        <div class="match-info-grid-row">
+                            <diV>
+                                <img src="./Assets/ScoreBoardAssets/Icons/1JS.png" alt="">
+                            </diV>
+                            <diV>
+                                <p>2nd T20</p>
+                                <p>AUSW VS BANW 2024 &nbsp;<i class="fa-solid fa-circle-chevron-right"></i></p>
+                            </diV>
+                        </div>
+                    </div>
+                    <!-- match info header -->
+                    <ul class="address-ul">
+                        <li><span>Apr 2, 2024, 11:30:00 AM</span></li>
+                        <li><span>Sher-e-Bangla National Stadium, Mirpur, Dhaka</span></li>
+                    </ul>
+
+
+                    <!-- Table component starts here -->
+                    <h5 class="match-info-heading">Head to Head
+                        <span>(Last 10 matches)</span>
+                    </h5>
+                    <div class="table-container-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="name-column-table">
+                                        <div class="left-icon-table left-icon-table-row">
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                                            <span>BANW</span>
+                                        </div>
+                                    </th>
+                                    <th class="name-column-table">
+                                        <div class="center-icon-table green">
+                                            0-3
+                                        </div>
+                                    </th>
+                                    <th class="name-column-table">
+                                        <div class="right-icon-table right-icon-table-row">
+                                            <span>AUSW</span>
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1I.avif"
+                                                alt="">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table">
+                                            <span>BANW</span>
+                                            <span>126/4
+                                                20.0</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span class="green">
+                                                AUSW WON
+                                            </span>
+                                            <span>1st T20I, AUSW vs BANW 2024</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table">
+                                            <span>BANW</span>
+                                            <span>126/4
+                                                20.0</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table">
+                                            <span>BANW</span>
+                                            <span>126/4
+                                                20.0</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span class="green">
+                                                AUSW WON
+                                            </span>
+                                            <span>1st T20I, AUSW vs BANW 2024</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table">
+                                            <span>BANW</span>
+                                            <span>126/4
+                                                20.0</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table component ends here -->
+
+
+                    <!-- Table component starts here -->
+                    <h5 class="match-info-heading">Team Comparison
+                        <span>(Last 10 matches)</span>
+                    </h5>
+                    <div class="table-container-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="name-column-table">
+                                        <div class="left-icon-table left-icon-table-row">
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                                            <span>BANW <br> <span class="light-team">vs All Teams</span></span>
+                                        </div>
+                                    </th>
+                                    <th class="name-column-table">
+                                        <div class="center-icon-table">
+                                        </div>
+                                    </th>
+                                    <th class="name-column-table">
+                                        <div class="right-icon-table right-icon-table-row">
+                                            <span class="right">AUSW <br> <span class="light-team">vs All
+                                                    Teams</span></span>
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1I.avif"
+                                                alt="">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table">
+                                            <span>BANW</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span>Matches Played</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table">
+                                            <span>BANW</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table">
+                                            <span>BANW</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span>Win</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table">
+                                            <span>BANW</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table component ends here -->
+
+
+                    <!-- Temperature -->
+                    <section class="Stadium">
+                        <p class="sher">Sher-e-Bangla National Stadium, Mirpur, Dhaka </p>
+                        <div class="National">
+                            <div class="clouds">
+                                <svg class="cloudsvg" xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                                    viewBox="0 0 21 21" fill="none">
+                                    <path
+                                        d="M12.4431 12.6585C13.2496 12.6591 14.0403 12.4347 14.7262 12.0106C15.4122 11.5864 15.9663 10.9794 16.3263 10.2577C16.6862 9.53593 16.8377 8.72812 16.7637 7.92501C16.6898 7.12191 16.3933 6.35534 15.9076 5.71148C15.4219 5.06762 14.7663 4.57198 14.0144 4.28026C13.2625 3.98855 12.4441 3.91233 11.6513 4.06016C10.8585 4.208 10.1226 4.57403 9.52634 5.11712C8.93011 5.66021 8.49716 6.35883 8.27616 7.13447C7.88502 6.86616 7.43632 6.69351 6.96622 6.63044C6.49612 6.56736 6.01778 6.61562 5.56975 6.77133C5.12172 6.92704 4.71655 7.18583 4.38689 7.52686C4.05723 7.86788 3.81231 8.28159 3.67188 8.73464C3.53144 9.18769 3.49942 9.66739 3.57839 10.1351C3.65736 10.6028 3.84512 11.0454 4.12652 11.4272C4.40792 11.809 4.7751 12.1194 5.19846 12.3332C5.62181 12.5471 6.0895 12.6585 6.56381 12.6585H12.4431Z"
+                                        fill="#B9D8E8" />
+                                    <path
+                                        d="M11.0266 9.87866L7.80859 13.5023L9.75518 13.5253L9.03906 16.3284L12.5068 12.655H10.3507L11.0266 9.87866Z"
+                                        fill="#D86837" />
+                                </svg>
+                                <div class="bgnational">
+                                    <p>Sher-e-Bangla National Stadium, Mirpur, Dhaka</p>
+                                    <h3>33.9˚C</h3>
+                                </div>
+                            </div>
+                            <div class="cloud Humidity">
+                                <div class="sunny-cloud">
+                                    <p>Partly sunny</p>
+                                    <div class="avgcloud">
+
+                                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M10.4445 3.20726C10.2222 2.9735 9.88891 2.91504 9.61112 3.14883C9.61112 3.14883 9.55557 3.14883 9.55557 3.20726C9.11112 3.79169 5 9.05164 5 11.7401C5 14.6623 7.22221 17 10 17C12.7778 17 15 14.6623 15 11.7401C15 9.05164 10.8889 3.79169 10.4445 3.20726Z"
+                                                    fill="url(#paint0_linear)" />
+                                                <path
+                                                    d="M8.67847 13.3098L12.1914 9.79688L11.3648 8.97031L7.8519 12.4832L8.67847 13.3098Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M8.24854 10.5713C8.57134 10.5713 8.83301 10.3096 8.83301 9.98682C8.83301 9.66402 8.57134 9.40234 8.24854 9.40234C7.92574 9.40234 7.66406 9.66402 7.66406 9.98682C7.66406 10.3096 7.92574 10.5713 8.24854 10.5713Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M11.7564 12.9072C12.0791 12.9072 12.3408 12.6456 12.3408 12.3228C12.3408 12 12.0791 11.7383 11.7564 11.7383C11.4336 11.7383 11.1719 12 11.1719 12.3228C11.1719 12.6456 11.4336 12.9072 11.7564 12.9072Z"
+                                                    fill="white" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear" x1="6.08325" y1="15.0717"
+                                                        x2="14.2993" y2="7.2645" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#34CDFA" />
+                                                        <stop offset="1" stop-color="#D9F0F1" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg><span>52% (Humidity)</span></h5>
+                                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M14.6991 17.1137C15.652 17.1144 16.5861 16.8493 17.3965 16.3483C18.207 15.8472 18.8617 15.1301 19.287 14.2774C19.7123 13.4248 19.8913 12.4704 19.804 11.5216C19.7168 10.5728 19.3666 9.66711 18.7929 8.90636C18.2192 8.14561 17.4447 7.55994 16.5564 7.21517C15.6681 6.8704 14.7013 6.78019 13.7646 6.95468C12.8279 7.12917 11.9584 7.56144 11.2539 8.20293C10.5493 8.84441 10.0377 9.66967 9.77635 10.586C9.31426 10.269 8.78417 10.065 8.2288 9.99051C7.67342 9.91599 7.10831 9.973 6.57901 10.157C6.04972 10.3409 5.57105 10.6466 5.18159 11.0495C4.79214 11.4524 4.50279 11.9412 4.33688 12.4764C4.17097 13.0116 4.13314 13.5783 4.22644 14.1309C4.31973 14.6834 4.54154 15.2063 4.87399 15.6574C5.20644 16.1084 5.64022 16.4751 6.14037 16.7278C6.64052 16.9804 7.19304 17.1121 7.75339 17.112L14.6991 17.1137Z"
+                                                    fill="#5490B9" />
+                                                <path d="M14.6809 18.3844V15.4413" stroke="#83B3CB"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.0308 20.7304V19.0542" stroke="#9FA6B7"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8.17456 17.0433V15.4413" stroke="#615C9A"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.7793 16.4023V15.4413" stroke="#9FA6B7"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg> <span>40 % Chance</span></h5>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Temperature -->
+
+
+                    <!-- Venue stats component starts here -->
+                    <section>
+                        <h5 class="match-info-heading" style="padding-top: 20px;">Venue Stats</h5>
+                        <div class="venue-stats-grid-row">
+                            <div>
+                                <canvas id="myChart" width="100" height="100"></canvas>
+                            </div>
+                            <div>
+                                <!-- Table -->
+                                <div class="table-container-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="name-column-table">
+                                                    <div class="left-icon-table left-icon-table-row">
+                                                        <span>Avg 1st Inns <span class="light-team">(119)</span></span>
+                                                    </div>
+                                                </th>
+                                                <th class="name-column-table">
+                                                    <div class="center-icon-table">
+                                                    </div>
+                                                </th>
+                                                <th class="name-column-table">
+                                                    <div class="right-icon-table right-icon-table-row">
+                                                        <span class="right">Avg 2st Inns <span
+                                                                class="light-team">(107)</span></span>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="name-column-table">
+                                                    <div class="left-icon-table">
+                                                        <span>Highest Total</span>
+                                                    </div>
+                                                </td>
+                                                <td class="name-column-table">
+                                                    <div class="center-icon-table">
+                                                        <span>by AUSW vs BANW
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="name-column-table">
+                                                    <div class="right-icon-table">
+                                                        <span>161-8</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="name-column-table">
+                                                    <div class="left-icon-table">
+                                                        <span>Lowest Total</span>
+                                                    </div>
+                                                </td>
+                                                <td class="name-column-table">
+                                                    <div class="center-icon-table">
+                                                        <span>by BANW vs INDW</span>
+                                                    </div>
+                                                </td>
+                                                <td class="name-column-table">
+                                                    <div class="right-icon-table">
+                                                        <span>87-10</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- Table -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Venue stats component ends here -->
+
+
+                    <!-- Progress Bar container starts here -->
+                    <h5 class="match-info-heading">Pace vs Spin on Venue
+                        <span>(Last 10 matches)</span>
+                    </h5>
+                    <div class="progress-bar-wrapper">
+                        <div>
+                            <p>Pace</p>
+                            <span class="green">72 Wkt</span>
+                        </div>
+                        <div>
+                            <div class="progress">
+                                <div class="progress-bar player1"></div>
+                                <div class="progress-bar player2"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Spin</p>
+                            <span class="red">34 Wkt</span>
+                        </div>
+                    </div>
+                    <!-- Progress Bar container ends here -->
+
+
+                    <h4 class="wickets-opacity-low">WICKETS</h4>
+
+                    <!-- Table component starts here -->
+                    <h5 class="match-info-heading">Recent Matches on Venue
+                    </h5>
+                    <div class="table-container-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table left-icon-table-row">
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                                            <span>BANW <br> <span class="light-team">vs All Teams</span></span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span class="green">
+                                                AUSW WON
+                                            </span>
+                                            <span>1st T20I, AUSW vs BANW 2024</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table right-icon-table-row">
+                                            <span class="right">AUSW <br> <span class="light-team">vs All
+                                                    Teams</span></span>
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1I.avif"
+                                                alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name-column-table">
+                                        <div class="left-icon-table left-icon-table-row">
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                                            <span>BANW <br> <span class="light-team">vs All Teams</span></span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="center-icon-table">
+                                            <span class="green">
+                                                AUSW WON
+                                            </span>
+                                            <span>1st T20I, AUSW vs BANW 2024</span>
+                                        </div>
+                                    </td>
+                                    <td class="name-column-table">
+                                        <div class="right-icon-table right-icon-table-row">
+                                            <span class="right">AUSW <br> <span class="light-team">vs All
+                                                    Teams</span></span>
+                                            <img class="icon-table" src="./Assets/ScoreBoardAssets/Icons/1I.avif"
+                                                alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table component ends here -->
+
+                </div>
+                <div>
+                    <div class="win-toss">
+                        <img src="./Assets/ScoreBoardAssets/Icons/toss.svg" alt="">
+                        <p>AUSW won the toss and chose to bat</p>
+                    </div>
+
+                    <h5 class="playing-team">Playing X1</h5>
+
+                    <!-- tab Module for Players -->
+                    <div class="tab-module-players">
+                        <div class="players playing-active" data-players="left-players">
+                            <p>BANW</p>
+                        </div>
+                        <div class="players" data-players="right-players">
+                            <p>AUSW</p>
+                        </div>
+                    </div>
+                    <!-- tab Module for Players -->
+
+                    <section class="left-players-inf" style="display: block;">
+                        <div class="grid-row-playing-module">
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="right-players-inf" style="display: none;">
+                        <div class="grid-row-playing-module">
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div onclick="openBenchPlayer()" class="on-bench-player">
+                        <div>
+                            <p>On Bench</p>
+                        </div>
+                        <div><i class="fa-solid fa-chevron-down" id="chevron"></i></div>
+                    </div>
+
+                    <section style="display: none;" id="onBench">
+                        <div class="grid-row-playing-module">
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-side-player-icons decr-width">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                    <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                </div>
+                                <div class="player-module-para">
+                                    <p>N Akter</p>
+                                    <p>Bowler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!-- 70 30 component ends here -->
+        </div>
+    </section>
+    <!-- Match Info component ends here -->
+
+    <!-- Live component starts here -->
+    <section class="live-info-wrapper" style="display: none;">
+        <div class="container opponent-wrapper">
+            <!-- 70 30 component starts here -->
+            <div class="live-info-grid-dividend-row">
+                <div>
+                    <!-- live info header component starts here -->
+                    <section class="Comment-ary">
+                        <div class="over-box">
+                            <div class="itemsc">
+                                <div class="over-boxinclude">
+                                    <div class="image-section"><img src="./Assets/ScoreBoardAssets/Icons/face.avif"
+                                            alt="">
+                                        <img class="image-cloth" src="./Assets/ScoreBoardAssets/Icons/shirt.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="itedes">
+                                        <div class="name-box">
+                                            <a href="">
+                                                <p>
+                                                    N Sultana</p>
+                                            </a>
+                                        </div>
+                                        <div class="batsmen-score">
+                                            <p class="stscores">32</p>
+                                            <p class="stscore">(31)</p>
+                                            <div class="svgscor">
+                                                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.29852 3.89906L8.69002 5.11406L2.72977 11.0797H1.90087L0.101318 9.28016V8.45261L6.06157 2.49911L7.27657 2.89061L10.3546 0.0664062L10.8622 0.574006L11.3698 1.08161L8.29852 3.89906Z"
+                                                        fill="#9e6105"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="batsmen-career-wrapper">
+                                        <div class="upper-head">
+                                            <div class="player-wrapper"><!----><a href="">
+                                                    <div class="p-name">N Sultana</div>
+                                                </a><!---->
+                                                <div class="p-score"><span>32</span><span class="styleplyer">(31)</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="player-strike-wrapper">
+                                            <div class="strike-rate right-space"><span> 4s:
+                                                </span><span> 5 </span></div>
+                                            <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                            <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                                        </div><!---->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="ptnr-info" id="firstDiv">
+                                <div id="secondDivs" style="display:none;">
+                                    <div class="partner-ship-data">
+                                        <span>0</span>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="plus-circle" onclick="toggleSecondDiv()" id="toggleBtn">
+                                    <i id="iconElement" class="fa-solid fa-plus"></i>
+                                </div>
+                                <div>
+                                    <div id="secondDiv" style="display:none;">
+                                        <div class="progress">
+                                            <div class="progress-bar player1"></div>
+                                            <div class="progress-bar player2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd -->
+                            <div class="itemsc">
+                                <div class="over-boxinclude secomdbox">
+                                    <div class="image-section"><img src="./Assets/ScoreBoardAssets/Icons/face.avif"
+                                            alt="">
+                                        <img class="image-cloth" src="./Assets/ScoreBoardAssets/Icons/shirt.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="itedes">
+                                        <div class="name-box">
+                                            <a href="">
+                                                <p>
+                                                    F Trisna</p>
+                                            </a>
+                                        </div>
+                                        <div class="batsmen-score">
+                                            <p class="stscores">2</p>
+                                            <p class="stscore">(8)</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="batsmen-career-wrapper">
+                                        <div class="upper-head">
+                                            <div class="player-wrapper"><!----><a href="">
+                                                    <div class="p-name">F Trisna</div>
+                                                </a><!---->
+                                                <div class="p-score"><span>2</span><span class="styleplyer">(8)</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="player-strike-wrapper">
+                                            <div class="strike-rate right-space"><span> 4s:
+                                                </span><span> 5 </span></div>
+                                            <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                            <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                                        </div><!---->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- 3rd-->
+                            <div class="itemsc">
+                                <div class="over-boxinclude">
+                                    <div class="image-section">
+                                        <img id="mgs" src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                                        <img class="image-cloth" id="mgss"
+                                            src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                                    </div>
+                                    <div class="itedes " id="jbs" style="display: block;">
+                                        <div class="name-box">
+                                            <a href="">
+                                                <p>
+                                                    G Wareham</p>
+                                            </a>
+                                        </div>
+                                        <div class="batsmen-score shdd">
+                                            <p class="stscores">2-1</p>
+                                            <p class="stscore">(1.1)</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="batsmen-career-wrapper">
+                                        <div class="upper-head">
+                                            <div class="player-wrapper"><!----><a href="">
+                                                    <div class="p-name">G Wareham</div>
+                                                </a><!---->
+                                                <div class="p-score"><span>2-1</span><span
+                                                        class="styleplyer">(1.1)</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="player-strike-wrapper">
+                                            <div class="strike-rate right-space"><span> 4s:
+                                                </span><span> 5 </span></div>
+                                            <div class="strike-rate"><span> 6s: </span><span> 0 </span></div>
+                                            <div class="strike-rate"><span>SR:</span><span>103.23</span></div>
+                                        </div><!---->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="atsbot">
+                        <div class="overs-slide">
+                            <div class="contover">
+                                <span>16th Over:</span>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">1</div>
+                                <div class="over-ball run-bg">4</div>
+                                <div class="total">=6</div>
+                            </div>
+                            <!-- 2nd -->
+                            <div class="contover">
+                                <span>16th Over:</span>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">1</div>
+                                <div class="over-ball run-bg">4</div>
+                                <div class="total">=6</div>
+                            </div>
+                            <!-- 3rd -->
+                            <div class="contover">
+                                <span>16th Over:</span>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">0</div>
+                                <div class="over-ball">1</div>
+                                <div class="over-ball run-bg">4</div>
+                                <div class="total">=6</div>
+                            </div>
+                            <!-- 4th -->
+                            <div class="contover">
+                                <span>16th Over:</span>
+                                <div class="over-ball wicket">0</div>
+                                <div class="over-ball overout">0</div>
+                                <div class="over-ball overout">0</div>
+                                <div class="over-ball overout">0</div>
+                                <div class="over-ball overout">1</div>
+                                <div class="over-ball overout">4</div>
+                                <div class="total">=0</div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- live info header component ends here -->
+
+                    <div class="commentary">
+                        <h5>Commentary</h5>
+
+                        <div class="commentary-tab-module-grid-row">
+                            <div class="comment commentary-active" data-comment="commentary-all">
+                                <p>All</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-highlights">
+                                <p>Highlights</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-overs">
+                                <p>Overs</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-w">
+                                <p>W</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-six">
+                                <p>6s</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-four">
+                                <p>4s</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-inn">
+                                <p>Inn 1</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-inns">
+                                <p>Inn 2</p>
+                            </div>
+                            <div class="comment" data-comment="commentary-milestone">
+                                <p>Milestone</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- All tab row starts here -->
+                    <section class="commentary-all-infos" style="display: block;">
+                        <div class="all-commentary-wrapper">
+                            <p class="commentary-text">That's it from our coverage of the third and final T20I.
+                                <b>Ninaad Dixit</b> here signing off on
+                                behalf of my co-commentator <b>Wali Siddique</b> and scorer/analyst <b>Bishal
+                                    Mandal</b>. Stay tuned
+                                for more cricketing action from around the world.
+                            </p>
+                            <p class="commentary-text">Alyssa Healy collects the series trophy and is joined by her
+                                teammates.</p>
+                            <p class="commentary-text"><b>Alyssa Healy (Australia Captain):</b> "No complaints at all,
+                                it’s been a worthwhile tour for
+                                us. The hospitality has been top notch. We are doing a lot of things right with both bat
+                                and ball. That’s something I’m really proud of before we head back over here for the T20
+                                World Cup in September. We have a good break now before we’re back for the huge summer.
+                                They’re (Bangladesh) an outstanding team and they can prove to be a threat in the World
+                                Cup."</p>
+                            <p class="commentary-text"><b>Sophie Molineux (Player of the Series):</b> "It’s been a
+                                series worth remembering. Different
+                                from what we play at home. Just great to be here and learn something new every time.
+                                Plenty of experience players who have shown their support as well as the NCA. Last few
+                                months have been nice and we’re looking forward to the World Cup as well."</p>
+                            <p class="commentary-text"><b>Sophie Molineux</b> is the <b>player of the series.</b></p>
+                            <p class="commentary-text">Megan Schutt struck in the very first over with Vlaeminck
+                                dismissing Ritu Moni, Fahima
+                                Khatun and Shorifa Khatun in her wonderful spell. Georgia Wareham conceded a single and
+                                picked up 2 wickets including the skipper. Rest of the bowlers picked up a wicket apiece
+                                offering nothing to the Bangladeshi batters.
+                            </p>
+                            <p class="commentary-text">Stay tuned as we return with the post series presentation.</p>
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="normal-bg">0</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">Bowls it full and keeps it outside off as that's driven
+                                            to the fielder at cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">Bowls it full and keeps it outside off as that's driven
+                                            to the fielder at cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs Table row -->
+                            <div class="overs-table-row">
+                                <div class="overs-table-grid-row">
+                                    <div class="heading-row-player-table">
+                                        <p>OVER 17</p>
+                                    </div>
+                                    <div></div>
+                                    <div class="heading-row-player-table right">
+                                        <p>
+                                            Bangladesh Women
+                                            71/9</p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Nigar Sultana
+                                            <span>27(28)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>
+                                            Fariha Trisna
+                                            <span>1(4)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Sophie Molineux
+                                            <span>1-15(4.0)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs Table row -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">M AKTER 32(31)</p>
+                                                <p class="player-info">C T Vlaeminck A Sutherland</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+                        </div>
+                    </section>
+                    <!-- All tab row ends here -->
+
+
+                    <!-- Highlights tab row starts here -->
+                    <section class="commentary-highlights-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <p class="commentary-text"><b>Alyssa Healy (Australia Captain):</b> "No complaints at all,
+                                it’s
+                                been a worthwhile tour for us. The hospitality has been top notch. We are doing a lot of
+                                things right with both bat and ball. That’s something I’m really proud of before we head
+                                back over here for the T20 World Cup in September. We have a good break now before we’re
+                                back for the huge summer. They’re (Bangladesh) an outstanding team and they can prove to
+                                be a threat in the World Cup."
+                            </p>
+                            <p class="commentary-text">Alyssa Healy collects the series trophy and is joined by her
+                                teammates.</p>
+                            <p class="commentary-text"><b>Alyssa Healy (Australia Captain):</b> "No complaints at all,
+                                it’s been a worthwhile tour for
+                                us. The hospitality has been top notch. We are doing a lot of things right with both bat
+                                and ball. That’s something I’m really proud of before we head back over here for the T20
+                                World Cup in September. We have a good break now before we’re back for the huge summer.
+                                They’re (Bangladesh) an outstanding team and they can prove to be a threat in the World
+                                Cup."</p>
+                            <p class="commentary-text"><b>Sophie Molineux (Player of the Series):</b> "It’s been a
+                                series worth remembering. Different
+                                from what we play at home. Just great to be here and learn something new every time.
+                                Plenty of experience players who have shown their support as well as the NCA. Last few
+                                months have been nice and we’re looking forward to the World Cup as well."</p>
+                            <p class="commentary-text"><b>Sophie Molineux</b> is the <b>player of the series.</b></p>
+                            <p class="commentary-text">Megan Schutt struck in the very first over with Vlaeminck
+                                dismissing Ritu Moni, Fahima
+                                Khatun and Shorifa Khatun in her wonderful spell. Georgia Wareham conceded a single and
+                                picked up 2 wickets including the skipper. Rest of the bowlers picked up a wicket apiece
+                                offering nothing to the Bangladeshi batters.
+                            </p>
+                            <p class="commentary-text">Stay tuned as we return with the post series presentation.</p>
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="normal-bg">0</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">Bowls it full and keeps it outside off as that's driven
+                                            to the fielder at cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">Bowls it full and keeps it outside off as that's driven
+                                            to the fielder at cover.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs Table row -->
+                            <div class="overs-table-row">
+                                <div class="overs-table-grid-row">
+                                    <div class="heading-row-player-table">
+                                        <p>OVER 17</p>
+                                    </div>
+                                    <div></div>
+                                    <div class="heading-row-player-table">
+                                        <p>
+                                            Bangladesh Women
+                                            71/9</p>
+                                    </div>
+                                </div>
+                                <div class="overs-table-grid-row">
+                                    <div class="player-name-row-name">
+                                        <p>Nigar Sultana
+                                            <span>27(28)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>
+                                            Fariha Trisna
+                                            <span>1(4)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Sophie Molineux
+                                            <span>1-15(4.0)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs Table row -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">M AKTER 32(31)</p>
+                                                <p class="player-info">C T Vlaeminck A Sutherland</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+                        </div>
+                    </section>
+                    <!-- Highlights tab row ends here -->
+
+                    <!-- Overs tab row starts here -->
+                    <section class="commentary-overs-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- overs Table row -->
+                            <div class="overs-table-row">
+                                <div class="overs-table-grid-row">
+                                    <div class="heading-row-player-table">
+                                        <p>OVER 17</p>
+                                    </div>
+                                    <div></div>
+                                    <div class="heading-row-player-table right">
+                                        <p>
+                                            Bangladesh Women
+                                            71/9</p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Nigar Sultana
+                                            <span>27(28)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>
+                                            Fariha Trisna
+                                            <span>1(4)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Sophie Molineux
+                                            <span>1-15(4.0)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs Table row -->
+
+                            <!-- overs Table row -->
+                            <div class="overs-table-row">
+                                <div class="overs-table-grid-row">
+                                    <div class="heading-row-player-table">
+                                        <p>OVER 17</p>
+                                    </div>
+                                    <div></div>
+                                    <div class="heading-row-player-table right">
+                                        <p>
+                                            Bangladesh Women
+                                            71/9</p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Nigar Sultana
+                                            <span>27(28)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>
+                                            Fariha Trisna
+                                            <span>1(4)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Sophie Molineux
+                                            <span>1-15(4.0)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs Table row -->
+
+                            <!-- overs Table row -->
+                            <div class="overs-table-row">
+                                <div class="overs-table-grid-row">
+                                    <div class="heading-row-player-table">
+                                        <p>OVER 17</p>
+                                    </div>
+                                    <div></div>
+                                    <div class="heading-row-player-table right">
+                                        <p>
+                                            Bangladesh Women
+                                            71/9</p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Nigar Sultana
+                                            <span>27(28)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>
+                                            Fariha Trisna
+                                            <span>1(4)</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-name-row-name">
+                                        <p>Sophie Molineux
+                                            <span>1-15(4.0)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs Table row -->
+                        </div>
+                    </section>
+                    <!-- Overs tab row ends here -->
+
+
+                    <!-- Commentary wickets row starts here -->
+                    <section class="commentary-w-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+                        </div>
+                    </section>
+                    <!-- Commentary wickets row ends here -->
+
+
+                    <!-- Commentary Six row starts here -->
+                    <section class="commentary-six-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+                        </div>
+                    </section>
+                    <!-- Commentary Six row ends here -->
+
+
+
+
+
+
+                    <!-- Commentary four row starts here -->
+                    <section class="commentary-four-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+                        </div>
+                    </section>
+                    <!-- Commentary four row ends here -->
+
+
+                    <!-- Commentary Six row starts here -->
+                    <section class="commentary-inn-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+                        </div>
+                    </section>
+                    <!-- Commentary Six row ends here -->
+
+
+
+
+
+                    <!-- Commentary inns row starts here -->
+                    <section class="commentary-inns-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="wicket">W</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+                        </div>
+                    </section>
+                    <!-- Commentary inns row ends here -->
+
+
+                    <!-- Commentary milestone row starts here -->
+                    <section class="commentary-milestone-infos" style="display: none;">
+                        <div class="all-commentary-wrapper">
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- overs -->
+                            <div class="overs-wrapper">
+                                <div class="over-grid-row">
+                                    <div>
+                                        <p class="overs-current">18.1</p>
+                                        <p class="run-bg">4</p>
+                                    </div>
+                                    <div>
+                                        <p class="players-name">G Wareham to N Sultana</p>
+                                        <p class="player-desc">BOWLED!! Wareham finishes things off as she loops the
+                                            ball at leg, Sultana
+                                            comes down the wicket while giving herself room in an attempt to play that
+                                            through cover. She misses and the ball crashes onto the leg-pole which
+                                            eventually leads to a clean sweep in favour of the Aussies! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overs -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+
+                            <!-- Highlights row -->
+                            <div class="commentary-row-higlights">
+                                <div class="commentary-highlight-bg">
+                                    <div class="commentary-linear-grid-row">
+                                        <div>
+                                            <div class="player">
+                                                <img src="./Assets/ScoreBoardAssets/Icons/QR.avif" alt="">
+                                                <p>OUT</p>
+                                            </div>
+                                            <div>
+                                                <p class="player-name">N Sultana 32(31)</p>
+                                                <p class="player-info">b G Wareham</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="left-side-run-rate">
+                                                <div>
+                                                    <p class="player-info">4s/6s</p>
+                                                    <p class="player-name">5/0</p>
+                                                </div>
+                                                <div>
+                                                    <p class="player-info">SR</p>
+                                                    <p class="player-name">103.23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Highlights row -->
+                        </div>
+                    </section>
+                    <!-- Commentary milestone row ends here -->
+                </div>
+                <div>
+
+                    <h5 class="player-head">Player of the Match</h5>
+
+                    <div class="player-of-match-grid-row">
+                        <div class="left-side-player-icons">
+                            <img src="./Assets/ScoreBoardAssets/Icons/face.avif" alt="">
+                            <img src="./Assets/ScoreBoardAssets/Icons/shirt.webp" alt="">
+                        </div>
+                        <div class="player-info-lef">
+                            <p>Tayla Vlaeminck</p>
+                            <p>Australian Women</p>
+                            <p>3/12</p>
+                        </div>
+                    </div>
+
+                    <div class="player-table-heading">
+                        <img src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                        <p>BANW - <span>2nd Innings</span></p>
+                    </div>
+                    <!-- 1st table  -->
+                    <div class="table-container-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="name-column-table">Session</th>
+                                    <th class="name-column-table">Open</th>
+                                    <th class="name-column-table">PASS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name-column-table">
+                                        6 Over</td>
+                                    <td class="name-column-table">
+                                        33</td>
+                                    <td class="name-column-table">
+                                        26</td>
+                                </tr>
+                                <tr>
+                                    <td class="name-column-table">
+                                        6 Over</td>
+                                    <td class="name-column-table">
+                                        33</td>
+                                    <td class="name-column-table">
+                                        26</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 1se table -->
+
+                    <div class="player-table-heading">
+                        <img src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                        <p>AUSW - <span>1st Innings</span></p>
+                    </div>
+                    <!-- 2nd table -->
+                    <div class="table-container-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="name-column-table">Session</th>
+                                    <th class="name-column-table">Open</th>
+                                    <th class="name-column-table">PASS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name-column-table">
+                                        6 Over</td>
+                                    <td class="name-column-table">
+                                        33</td>
+                                    <td class="name-column-table">
+                                        26</td>
+                                </tr>
+                                <tr>
+                                    <td class="name-column-table">
+                                        6 Over</td>
+                                    <td class="name-column-table">
+                                        33</td>
+                                    <td class="name-column-table">
+                                        26</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 2nd table -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Live component ends here -->
+
+    <!-- ScoreBoard component starts here -->
+    <section class="scorecard-info-wrapper" style="display: none;">
+        <div class="container opponent-wrapper">
+            <!-- 70 30 component starts here -->
+            <div class="live-info-grid-dividend-row">
+                <div>
+                    <h4>Scorecard</h4>
+                    <!-- tab module switch team -->
+                    <div class="switch-team-tab-grid-row">
+                        <div class="opponent" data-opponent="opponent-left">
+                            <div class="row-left">
+                                <img src="./Assets/ScoreBoardAssets/Icons/1M.png" alt="">
+                                <p>AUSW</p>
+                            </div>
+                            <div class="row-right">
+                                <p>161-8</p>
+                                <p>(20.0)</p>
+                            </div>
+                        </div>
+                        <div class="opponent opponent-active" data-opponent="opponent-right">
+                            <div class="row-left">
+                                <img src="./Assets/ScoreBoardAssets/Icons/1I.avif" alt="">
+                                <p>BANW</p>
+                            </div>
+                            <div class="row-right">
+                                <p>103-9</p>
+                                <p>(20.0)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab module switch team -->
+
+
+                    <!-- opponent 1st row component starts here -->
+                    <section class="opponent-left-info" style="display: none;">
+                        <div class="container opponent-wrapper">
+                            <h4>Batting</h4>
+
+                            <!-- Batter table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batter</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">R</th>
+                                            <th class="equal-width-columns">B</th>
+                                            <th class="equal-width-columns">4s</th>
+                                            <th class="equal-width-columns">6s</th>
+                                            <th class="series-column">SR</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1 <span class="arrow-down"
+                                                    onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-down"></i></span><span
+                                                    class="arrow-up" onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-up"></i></span></td>
+                                            <td class="name-column-table">
+                                                b Wareham</td>
+                                            <td class="equal-width-columns">50</td>
+                                            <td class="equal-width-columns">20</td>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="series-details">
+                                            <td colspan="12">
+                                                <!-- Content for accordion goes here -->
+                                                Details for Player 1
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2 <span class="arrow-down"
+                                                    onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-down"></i></span><span
+                                                    class="arrow-up" onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-up"></i></span></td>
+                                            <td class="name-column-table">c Healy b Schutt</td>
+                                            <td class="equal-width-columns">45</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="series-details">
+                                            <td colspan="12">
+                                                <!-- Content for accordion goes here -->
+                                                Details for Player 2
+                                            </td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Batter table row ends here -->
+
+
+                            <h4>Bowling</h4>
+
+                            <!-- Bowler table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batter</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">O</th>
+                                            <th class="equal-width-columns">M</th>
+                                            <th class="equal-width-columns">R</th>
+                                            <th class="equal-width-columns">W</th>
+                                            <th class="series-column">ER</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1</td>
+                                            <td class="name-column-table"></td>
+                                            <td class="equal-width-columns">50</td>
+                                            <td class="equal-width-columns">20</td>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2</td>
+                                            <td class="name-column-table"></td>
+                                            <td class="equal-width-columns">45</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Bowler table row ends here -->
+
+                            <h4>Fall of Wickets</h4>
+
+                            <!-- Bowler table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batsman</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">Score</th>
+                                            <th class="series-column">Over</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1</td>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2</td>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Bowler table row ends here -->
+
+                        </div>
+                    </section>
+                    <!-- opponent 1st row component ends here -->
+
+                    <!-- opponent 2nd row component starts here -->
+                    <section class="opponent-right-info" style="display: block;">
+                        <div class="container opponent-wrapper">
+                            <h4>Batting</h4>
+
+                            <!-- Batter table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batter</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">R</th>
+                                            <th class="equal-width-columns">B</th>
+                                            <th class="equal-width-columns">4s</th>
+                                            <th class="equal-width-columns">6s</th>
+                                            <th class="series-column">SR</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1 <span class="arrow-down"
+                                                    onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-down"></i></span><span
+                                                    class="arrow-up" onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-up"></i></span></td>
+                                            <td class="name-column-table">
+                                                b Wareham</td>
+                                            <td class="equal-width-columns">50</td>
+                                            <td class="equal-width-columns">20</td>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="series-details">
+                                            <td colspan="12">
+                                                <!-- Content for accordion goes here -->
+                                                Details for Player 1
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2 <span class="arrow-down"
+                                                    onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-down"></i></span><span
+                                                    class="arrow-up" onclick="toggleAccordion(this)"><i
+                                                        class="fa-solid fa-chevron-up"></i></span></td>
+                                            <td class="name-column-table">c Healy b Schutt</td>
+                                            <td class="equal-width-columns">45</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="series-details">
+                                            <td colspan="12">
+                                                <!-- Content for accordion goes here -->
+                                                Details for Player 2
+                                            </td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Batter table row ends here -->
+
+
+                            <h4>Bowling</h4>
+
+                            <!-- Bowler table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batter</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">O</th>
+                                            <th class="equal-width-columns">M</th>
+                                            <th class="equal-width-columns">R</th>
+                                            <th class="equal-width-columns">W</th>
+                                            <th class="series-column">ER</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1</td>
+                                            <td class="name-column-table"></td>
+                                            <td class="equal-width-columns">50</td>
+                                            <td class="equal-width-columns">20</td>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2</td>
+                                            <td class="name-column-table"></td>
+                                            <td class="equal-width-columns">45</td>
+                                            <td class="equal-width-columns">25</td>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                            <td class="series-column">
+                                                10
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Bowler table row ends here -->
+
+                            <h4>Fall of Wickets</h4>
+
+                            <!-- Bowler table row starts here -->
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">Batsman</th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="equal-width-columns">Score</th>
+                                            <th class="series-column">Over</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">Player 1</td>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <td class="equal-width-columns">5</td>
+                                            <td class="equal-width-columns">25</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">Player 2</td>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <th class="name-column-table"></th>
+                                            <td class="equal-width-columns">10</td>
+                                            <td class="equal-width-columns">15</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Bowler table row ends here -->
+
+
+
+                            <!-- Partnership table row starts here -->
+                            <h4>Partnership</h4>
+
+                            <div class="table-container-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name-column-table">
+                                                <div class="left-icon-table left-icon-table-row">
+                                                    <span>Batter 1</span>
+                                                </div>
+                                            </th>
+                                            <th class="name-column-table">
+                                                <div class="center-icon-table green">
+
+                                                </div>
+                                            </th>
+                                            <th class="name-column-table">
+                                                <div class="right-icon-table right-icon-table-row">
+                                                    <span>Batter 2</span>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-column-table">
+                                                <div class="left-icon-table">
+                                                    <span>1ST WICKET</span>
+                                                    <span>Dilara Akter</span>
+                                                    <span>2 <span>(3)</span></span>
+                                                </div>
+                                            </td>
+                                            <td class="name-column-table">
+                                                <div class="center-icon-table">
+                                                    <span class="green">
+                                                        4 (5)
+                                                    </span>
+                                                    <!-- progress bar -->
+                                                    <div class="progress">
+                                                        <div class="progress-bar player1"></div>
+                                                        <div class="progress-bar player2"></div>
+                                                    </div>
+                                                    <!-- progress bar -->
+                                                </div>
+                                            </td>
+                                            <td class="name-column-table">
+                                                <div class="right-icon-table">
+                                                    <span>Murshida Khatun</span>
+                                                    <span>1 <span>(2)</span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-column-table">
+                                                <div class="left-icon-table">
+                                                    <span>2ND WICKET</span>
+                                                    <span>Dilara Akter</span>
+                                                    <span>2 <span>(3)</span></span>
+                                                </div>
+                                            </td>
+                                            <td class="name-column-table">
+                                                <div class="center-icon-table">
+                                                    <span class="green">
+                                                        4 (5)
+                                                    </span>
+                                                    <!-- progress bar -->
+                                                    <div class="progress">
+                                                        <div class="progress-bar player1"></div>
+                                                        <div class="progress-bar player2"></div>
+                                                    </div>
+                                                    <!-- progress bar -->
+                                                </div>
+                                            </td>
+                                            <td class="name-column-table">
+                                                <div class="right-icon-table">
+                                                    <span>Murshida Khatun</span>
+                                                    <span>1 <span>(2)</span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Partnership table row ends here -->
+
+                        </div>
+                    </section>
+                    <!-- opponent 2nd row component ends here -->
+                </div>
+                <div>
+                    <!-- something goes here 30% of the page -->
+                </div>
+            </div>
+            <!-- 70 30 component ends here -->
+        </div>
+    </section>
+    <!-- ScoreBoard component ends here -->
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Styxsports. All Rights Reserved.</p>
+
+        <!-- Bottom Navigation -->
+        <section id="bottom_nav">
+            <div class="bottom-navigation">
+                <div class="bottom-navigation-grid-row">
+                    <div>
+                        <p><i class="fa-solid fa-house"></i></p>
+                        <p>Home</p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-baseball-bat-ball"></i></p>
+                        <p>Matches</p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-trophy"></i></p>
+                        <p>Series</p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-video"></i></p>
+                        <p>Videos</p>
+                    </div>
+                    <div>
+                        <p><i class="fa-regular fa-newspaper"></i></p>
+                        <p>News</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bottom Navigation -->
+    </footer>
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="./Assets/JS/jquery.min.js"></script>
+
+    <!-- Tab Module Script -->
+    <script src="./Assets/JS/TabModule.js"></script>
+
+    <!-- Table Accordion Script -->
+    <script src="./Assets/JS/TableAccordion.js"></script>
+
+    <!-- Progress Bar Script -->
+    <script src="./Assets/JS/ProgressBar.js"></script>
+
+    <!-- Chart Script -->
+    <script src="./Assets/JS/Chart.js"></script>
+
+    <!-- Live Player Toggle Script -->
+    <script src="./Assets/JS/PlayerToggle.js"></script>
+
+    <!-- Navigation Script -->
+    <script src="./Assets/JS/Navigation.js"></script>
+</body>
+
+</html>

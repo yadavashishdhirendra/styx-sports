@@ -1,0 +1,1817 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    transition: .3s ease-in;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+/* Resetting css */
+
+/* font family including */
+@font-face {
+    font-family: Saira_Light;
+    src: url('../Fonts/Saira-Light.ttf');
+}
+
+@font-face {
+    font-family: Saira_Regular;
+    src: url('../Fonts/Saira-Regular.ttf');
+}
+
+@font-face {
+    font-family: Saira_Medium;
+    src: url('../Fonts/Saira-Medium.ttf');
+}
+
+@font-face {
+    font-family: Saira_SemiBold;
+    src: url('../Fonts/Saira-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Saira_Bold;
+    src: url('../Fonts/Saira-Bold.ttf');
+}
+
+@font-face {
+    font-family: Saira_Medium_Italic;
+    src: url('../Fonts/Saira-MediumItalic.ttf');
+}
+
+/* font family including */
+
+/* scrollbar change css */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* opponent section css starts here */
+.opponent-section {
+    background-color: #102C6D;
+    padding: 40px 20px;
+    margin-top: 4.43rem;
+}
+
+.opponent-wrapper {
+    max-width: 1180px !important;
+    margin: auto;
+}
+
+.opponent-section>.container>h3 {
+    font-family: 'Saira_SemiBold';
+    color: #9fa3a7;
+    font-size: 18px;
+}
+
+.opponent-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.opponent-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.opponent-row>div>img {
+    width: 60px;
+    height: 60px;
+}
+
+.opponent-row>div>h4 {
+    color: #9fa3a7;
+    font-family: 'Saira_Medium';
+    font-size: 28px;
+    margin-bottom: 0rem;
+}
+
+.opponent-row>div>p {
+    color: #9fa3a7;
+    margin-bottom: 0rem;
+    font-family: 'Saira_Medium';
+    font-size: 28px;
+}
+
+.opponent-row>div>p>span {
+    font-family: 'Saira_Regular' !important;
+    font-size: 16px;
+}
+
+.opponent-grid-row {
+    padding-top: 40px;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.opponent-desc {
+    padding: 0px 40px;
+}
+
+.opponent-desc>h4 {
+    text-align: center;
+    font-size: 28px;
+    color: rgba(234, 174, 84, .9);
+    font-family: 'Saira_SemiBold';
+}
+
+@media screen and (max-width: 992px) {
+    .opponent-desc {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .opponent-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .flex-end,
+    .opponent-row {
+        justify-content: center;
+    }
+
+    .flex-end {
+        flex-direction: row-reverse;
+    }
+}
+
+/* opponent section css ends here */
+
+/* tab module section css starts here */
+.tab-module-row {
+    background-color: #102C6D;
+    border-top: 1px solid rgba(159, 163, 167, .1);
+    padding-top: 10px;
+}
+
+.tab-module-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: fit-content;
+    gap: 10px;
+}
+
+.tab-module-grid-row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-module-grid-row>div>p {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.tab>p {
+    border-bottom: 2px solid transparent;
+    transition: .3s ease-in-out;
+}
+
+.info-active>p {
+    border-bottom: 2px solid #ff7575;
+}
+
+/* tab module section css ends here */
+
+/* scorecard css starts here */
+.live-info-grid-dividend-row {
+    display: grid;
+    grid-template-columns: 765px 2fr;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.live-info-grid-dividend-row>div>h4 {
+    font-family: 'Saira_SemiBold';
+    font-size: 28px;
+    color: #102C6D;
+}
+
+.live-info-grid-dividend-row>div:nth-child(1) {
+    border-right: 1px solid rgba(159, 163, 167, .1);
+    padding-right: 20px;
+}
+
+.switch-team-tab-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    max-width: fit-content;
+    margin-top: 20px;
+}
+
+.switch-team-tab-grid-row>div {
+    border: 1px solid rgba(24, 96, 166, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    gap: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.opponent-active {
+    background-color: rgba(24, 96, 166, 0.08);
+}
+
+.switch-team-tab-grid-row>div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.switch-team-tab-grid-row>div>div>p {
+    margin-bottom: 0rem;
+}
+
+.row-left>p:nth-child(2),
+.row-right>p:nth-child(1) {
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+}
+
+.row-right>p:nth-child(2) {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.switch-team-tab-grid-row>div>div>img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    .live-info-grid-dividend-row{
+        grid-template-columns: 600px 2fr;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .live-info-grid-dividend-row {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .switch-team-tab-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+
+/* table module css starts here */
+.table-container-table {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+
+
+.table-container-table>table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-container-table>table>thead>th,
+.table-container-table>table>tbody>tr>td {
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.table-container-table>table>thead>tr>th {
+    font-family: 'Saira_Medium';
+    color: #999;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px dotted #ddd;
+}
+
+
+.name-column-table-table {
+    width: 20%;
+}
+
+.equal-width-columns {
+    width: 6%;
+}
+
+.series-column {
+    width: 12%;
+    cursor: pointer;
+}
+
+.series-details {
+    display: none;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.arrow-down {
+    display: inline-block;
+}
+
+
+.opponent-wrapper>h4 {
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+    padding: 50px 0px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+thead {
+    background-color: #f9f9f9;
+}
+
+
+/* table module css ends here */
+
+/* scorecards css ends here */
+
+/* Match info grid css starts here */
+.match-info-grid-row {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+    max-width: fit-content;
+
+}
+
+.match-info-grid-row>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.match-info-grid-row>div>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow-clip-margin: unset;
+    overflow: hidden;
+}
+
+.match-info-grid-row>div>p {
+    margin-bottom: 0rem;
+}
+
+.match-info-grid-row>div>p:nth-child(1) {
+    color: #4a4a4a;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.match-info-grid-row>div>p:nth-child(2) {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+    color: #1c1c1c;
+}
+
+.match-info-row {
+    border-bottom: 1px solid rgb(218, 218, 218, 0.5);
+    padding-bottom: 20px;
+}
+
+.address-ul {
+    margin-top: 25px;
+    /* max-width: 70%; */
+}
+
+.address-ul>li {
+    margin-bottom: 10px;
+}
+
+.address-ul>li:nth-child(1) {
+    list-style-image: url('../ScoreBoardAssets/Icons/calender.svg');
+    font-family: 'Saira_Medium';
+    color: #1c1c1c;
+}
+
+.address-ul>li:nth-child(2) {
+    list-style-image: url('../ScoreBoardAssets/Icons/location.svg');
+    font-family: 'Saira_Medium';
+    color: #102C6D;
+}
+
+.address-ul>li>span {
+    position: relative;
+    top: -6px;
+}
+
+.match-info-heading {
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+    padding: 40px 0px 10px 0px;
+}
+
+.match-info-heading>span {
+    color: #999;
+}
+
+.icon-table {
+    width: 50px;
+}
+
+
+.right-icon-table {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.left-icon-table {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.center-icon-table {
+    align-items: center;
+    justify-content: center;
+}
+
+.left-icon-table,
+.right-icon-table,
+.center-icon-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-icon-table-row,
+.right-icon-table-row {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.light-team {
+    font-family: 'Saira_Regular';
+    font-size: 12px;
+}
+
+.green {
+    color: #90D26D;
+}
+
+@media screen and (max-width: 640px) {
+    .live-info-grid-dividend-row>div:nth-child(1) {
+        padding-right: 0px;
+        border-right: 1px solid transparent;
+    }
+}
+
+/* Match info grid css ends here */
+
+
+/* commentary css starts here */
+
+.commentary {
+    margin-top: 20px;
+}
+
+.commentary>h5 {
+    font-family: 'Saira_SemiBold';
+    font-size: 24px;
+}
+
+.commentary-tab-module-grid-row {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    max-width: fit-content;
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.commentary-tab-module-grid-row>div {
+    cursor: pointer;
+}
+
+.commentary-tab-module-grid-row>div>p {
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 0rem;
+    border-radius: 2px;
+}
+
+.commentary-active,
+.playing-active {
+    background-color: rgba(110, 180, 239, .08) !important;
+    color: #6eb4ef;
+    border-radius: 2px;
+}
+
+.all-commentary-wrapper {
+    margin-top: 1rem;
+}
+
+.commentary-text {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+    color: #1c1c1c;
+}
+
+/* commentary css ends here */
+
+/* scoreboard Temperature css starts here */
+.National {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: #F3F7FA;
+    padding: 20px 20px;
+    margin: 15px 0px;
+}
+
+.Stadium .sher {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: 'Saira_SemiBold';
+    margin-top: 20px;
+}
+
+
+.clouds {
+    display: flex;
+    align-items: center;
+}
+
+.bgnational p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Saira_Medium';
+}
+
+.bgnational h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 0;
+    font-family: 'Saira_SemiBold';
+}
+
+.clouds .cloudsvg {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.sunny-cloud {
+    text-align: end;
+}
+
+.Humidity {
+    justify-content: end;
+}
+
+.Humidity p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Saira_Medium';
+}
+
+.Humidity h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-family: 'Saira_Medium';
+}
+
+.avgcloud {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.avgcloud svg {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.avgcloud span {
+    vertical-align: middle;
+}
+
+.avgcloud h5:nth-child(1) {
+    margin-right: 40px;
+}
+
+
+@media screen and (max-width: 772.99px) {
+    .avgcloud {
+        display: initial;
+    }
+
+    .avgcloud h5:nth-child(1) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 772.99px) {
+    .avgcloud h5 {
+        font-size: 11px;
+        line-height: 10px;
+    }
+
+    .avgcloud svg {
+        margin-right: 2px;
+    }
+
+    .bgnational p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .Humidity p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+}
+
+/* scoreboard Temperature css ends here */
+
+
+/* commentary highlight design */
+.commentary-highlight-bg {
+    background: linear-gradient(91.7deg, #8e2b18, #a21e17);
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.commentary-linear-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.commentary-linear-grid-row p {
+    margin-bottom: 0rem;
+}
+
+.commentary-linear-grid-row>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.commentary-linear-grid-row>div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.player {
+    background-color: rgba(0, 0, 0, .2);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.player>p {
+    margin-bottom: 0rem;
+    text-align: center;
+    background: #bc2f20;
+    border-width: 0 0 1px 1px;
+    border-color: hsla(0, 0%, 100%, .2);
+    border-radius: 0 0 10px 10px;
+    font-family: 'Saira_SemiBold';
+    color: rgba(255, 233, 155, .9);
+    margin-top: -12px;
+    z-index: 9999;
+    position: relative;
+}
+
+.player-info {
+    color: #f7f9fe;
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.player-name {
+    font-family: 'Saira_SemiBold';
+    font-size: 22px;
+    color: white;
+}
+
+.left-side-run-rate>div:nth-child(2)>p {
+    text-align: right;
+}
+
+.player>img {
+    width: 80px;
+    padding: 5px 3px;
+}
+
+.left-side-run-rate {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: fit-content;
+}
+
+@media screen and (max-width: 598px) {
+    .commentary-linear-grid-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* commentary highlight design */
+
+/* over row grid css starts here */
+.over-grid-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.over-grid-row>div:nth-child(1) {
+    text-align: center;
+}
+
+.over-grid-row>div:nth-child(2) {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-bottom: 20px;
+}
+
+.overs-current {
+    font-family: 'Saira_Regular';
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.players-name {
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.player-desc {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+    margin-bottom: 0rem;
+}
+
+.normal-bg,
+.run-bg {
+    background-color: #f5f5f5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1c1c1c;
+    border: 1px solid #dadada;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.run-bg {
+    background-color: #9e6105;
+    color: white !important;
+}
+
+.wicket {
+    background-color: #a21e17;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+/* over row grid css ends here */
+
+/* overs table row */
+
+.overs-table-row {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px 15px 0px 15px;
+    border-radius: 5px;
+}
+
+.overs-table-grid-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid rgb(218, 218, 218); */
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.heading-row-player-table>p {
+    font-family: 'Saira_Medium';
+    font-size: 16px;
+    color: #1c1c1c;
+    margin-bottom: 0rem;
+}
+
+.player-name-row-name>p {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.player-name-row-name>p>span {
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+.overs-table-row>div:nth-child(2) {
+    border-bottom: none;
+}
+
+.overs-table-grid-row>div>p {
+    margin-bottom: 0rem;
+}
+
+.overs-table-grid-row>div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* overs table row */
+
+/* progress bar css starts here */
+.progress {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar.player1 {
+    background-color: #4CAF50;
+    /* Green color for player 1 */
+}
+
+.progress-bar.player2 {
+    background-color: #FFA500;
+    /* Orange color for player 2 */
+}
+
+/* progress bar css ends here */
+
+
+/* progress bar wrapper */
+.progress-bar-wrapper {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 15px
+}
+
+.progress-bar-wrapper>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar-wrapper>div>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+.red {
+    color: #a21e17;
+}
+
+.progress-bar-wrapper>div>span {
+    font-family: 'Saira_SemiBold';
+    font-size: 12px;
+}
+
+.progress-bar-wrapper>div:nth-child(2) {
+    margin-top: 12px;
+}
+
+.progress-bar-wrapper>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.wickets-opacity-low {
+    color: #999 !important;
+    text-align: center;
+}
+
+/* progress bar wrapper */
+
+/* Venue stats grid row */
+.venue-stats-grid-row {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 10px;
+}
+
+.venue-stats-grid-row>div:nth-child(1) {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+canvas {
+    width: 90% !important;
+    height: initial !important;
+}
+
+
+@media screen and (max-width: 640px) {
+    .venue-stats-grid-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Venue stats grid row */
+
+/* player of the match grid row */
+.player-of-match-grid-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.left-side-player-icons {
+    position: relative;
+    top: 0;
+}
+
+.player-head {
+    font-family: 'Saira_Medium';
+    font-size: 22px;
+}
+
+.left-side-player-icons>img:nth-child(1) {
+    position: relative;
+    top: 0;
+    width: 80px;
+}
+
+.left-side-player-icons>img:nth-child(2) {
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 80px;
+}
+
+.player-info-lef>p {
+    margin-bottom: 0rem;
+}
+
+.player-info-lef>p:nth-child(1) {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+}
+
+.player-info-lef>p:nth-child(2),
+.player-info-lef>p:nth-child(3) {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+/* player of the match grid row */
+
+
+/* player info header live section css starts here */
+.over-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.over-box img {
+    max-width: 76px;
+    margin: auto;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-cloth {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.name-box a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.name-box p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Saira_SemiBold';
+}
+
+.over-boxinclude {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.batsmen-score .stscore {
+    margin-bottom: 0;
+    margin-left: .25em;
+    margin-right: 1em;
+    font-size: 14px;
+    font-family: 'Saira_Regular';
+}
+
+.strike-rate>span {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.contover>span,
+.over-ball {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.p-name {
+    font-family: 'Saira_SemiBold';
+    font-size: 18px;
+}
+
+.p-score>span {
+    font-family: 'Saira_Regular';
+    font-size: 16px;
+}
+
+.batsmen-score {
+    display: flex;
+    align-items: center;
+}
+
+.batsmen-score .stscores {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Saira_SemiBold';
+}
+
+.itedes {
+    margin-left: 1.25em;
+    margin-top: 2em;
+}
+
+.batsmen-career-wrapper {
+    width: 248px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+    border-radius: 6px;
+    padding: 1em;
+    display: none;
+    position: absolute;
+    top: 84px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.over-boxinclude:hover .batsmen-career-wrapper {
+    display: block;
+}
+
+.svgscor svg {
+    width: 18px;
+    height: 18px;
+}
+
+.playing-batsmen-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-wrapper a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4a4a4a;
+}
+
+.player-wrapper .p-score {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.player-wrapper .p-score .styleplyer {
+    color: #4a4a4a;
+    margin-left: .5em;
+    font-size: 14px;
+}
+
+.batsmen-career-wrapper hr {
+    color: #dadada;
+    margin: 10px 0px;
+}
+
+.player-strike-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ptnr-info {
+    margin-top: 10px;
+    text-align: center;
+    transition: width .5s;
+}
+
+#secondDiv {
+    transition: width .5s;
+    width: 125px;
+}
+
+
+.partner-ship-data>span {
+    font-family: 'Saira_Regular';
+    font-size: 18px;
+}
+
+.partner-ship-data span:first-child {
+    margin-right: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #9e6105;
+}
+
+.partner-ship-data span:nth-child(2) {
+    font-size: 12px;
+    color: #4a4a4a;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.plus-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f9f9f9;
+    color: #1860a6;
+    margin: 10px auto;
+
+}
+
+.plus-circle i {
+    font-size: 10px;
+}
+
+.itemsc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-box a:hover {
+    text-decoration: underline;
+}
+
+.secomdbox {
+    border-right: 1px solid #dadada;
+    padding-right: 15px;
+}
+
+.shdd {
+    text-align: end;
+}
+
+@media screen and (max-width: 1080px) {
+    .over-boxinclude {
+        display: initial;
+    }
+
+    .secomdbox {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .itedes {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .name-box p {
+        font-size: 12px;
+        width: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .batsmen-score .stscores {
+        font-size: 14px;
+    }
+
+    .over-box {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+.atsbot {
+    margin: 25px 0px;
+    border: 1px solid #dadada;
+}
+
+.contover {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+
+
+
+.over-ball {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin: .25em 0 .25em .75em;
+    color: #4a4a4a;
+    border: 1px solid #dadada;
+}
+
+.total {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 6px;
+    font-family: 'Saira_Regular';
+}
+
+.contover span {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+
+
+
+.overs-slide {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overs-slide ::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overs-slide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-btn {
+    left: 80px;
+    font-size: 2rem;
+    color: white;
+}
+
+.right-btn {
+    right: 80px;
+    font-size: 2rem;
+    color: white;
+}
+
+.overout {
+    box-shadow: 0 4px 40px rgba(0, 0, 0, .05);
+}
+
+.player-table-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.player-table-heading>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_Medium';
+    font-size: 18px;
+}
+
+.player-table-heading>p>span {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+}
+
+.player-table-heading>img {
+    width: 30px;
+}
+
+/* player info header live section css ends here */
+
+/* Match Module Right screen css starts here */
+.win-toss {
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    gap: 8px;
+}
+
+.win-toss>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+}
+
+.playing-team {
+    font-family: 'Saira_Medium';
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.tab-module-players {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.tab-module-players>div {
+    border: 1px solid #f9f9f9;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-row-playing-module {
+    margin-top: 30px;
+}
+
+.tab-module-players>div>p {
+    margin-bottom: 0rem;
+}
+
+.decr-width>img:nth-child(1) {
+    width: 55px !important;
+}
+
+.decr-width>img:nth-child(2) {
+    width: 51px !important;
+    bottom: -7px !important;
+    left: 2px !important;
+}
+
+.grid-row-playing-module {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+}
+
+.grid-row-playing-module>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.player-module-para>p:nth-child(1) {
+    font-family: 'Saira_Regular';
+    font-size: 14px;
+    margin-bottom: 0rem;
+}
+
+.player-module-para>p:nth-child(2) {
+    font-family: 'Saira_Medium';
+    font-size: 12px;
+    color: #4a4a4a;
+    margin-bottom: 0rem;
+}
+
+.on-bench-player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #f3f3f3;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.on-bench-player>div>p {
+    margin-bottom: 0rem;
+    font-family: 'Saira_SemiBold';
+    font-size: 16px;
+    color: #1860a6;
+}
+
+
+.rotate {
+    transform: rotate(180deg) !important;
+    transition: transform 0.3s ease !important;
+}
+
+
+footer {
+    background-color: #102C6D;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+footer>p {
+    color: white;
+    font-family: 'Saira_Medium';
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0rem;
+    padding: 8px 10px;
+}
+
+/* Match Module Right screen css ends here */
+
+/* navbar css */
+.nav-link {
+    font-family: 'Saira_Light';
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: #102C6D;
+}
+
+.menu-icon {
+    color: white;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .dropdown-menu>div:nth-child(1) {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: fixed;
+        top: 65px;
+        border-radius: 0px;
+        background-color: #1860a6;
+        padding: 10px 20px;
+    }
+
+    .dropdown-menu{
+        position: relative;
+        top: 0;
+    }
+
+    .dropdown-menu>div:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        max-width: 80%;
+        width: 1180px;
+        overflow-x: auto;
+        margin: auto;
+    }
+
+    .dropdown-menu>div:nth-child(2) {
+        display: none;
+    }
+
+    .dropdown-menu>div>li>a>img {
+        width: 145px;
+        height: 152px;
+    }
+
+    .dropdown-item {
+        padding: 20px 10px;
+        transition: .3s ease-in;
+        border-radius: 5px;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:active {
+        background-color: rgba(18, 19, 19, .4) !important;
+        padding: 20px 10px !important;
+    }
+
+    .hide-scrollbar{
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+    }
+}
+
+/* navbar css */
+
+
+/* Mobile Menu css starts here */
+
+@media screen and (max-width: 1079px) {
+    #navbarSupportedContent{
+        display: none;
+    }
+}
+#menu {
+    position: fixed;
+    background-color: #222;
+    height: 100%;
+    z-index: 10;
+    width: 280px;
+    color: #bbb;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
+    font-family: 'Saira_Medium';
+    z-index: 999999999;
+  }
+
+  #menu ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0
+  }
+
+  #menu ul li {
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  #menu>ul>li>a {
+    border-left: 4px solid #222;
+  }
+
+  #menu ul li a {
+    color: inherit;
+    font-size: 16px;
+    display: block;
+    padding: 12px 0 12px 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  .input-sidebar>input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 42px;
+    border-radius: 5px;
+    font-family: 'Saira_SemiBold';
+    font-size: 14px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+  }
+
+  #menu ul a i {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 3px;
+    width: 20px;
+  }
+
+  #menu ul a i[class*='fa-caret'] {
+    float: right;
+  }
+
+  #menu ul a:hover,
+  #menu ul a.active {
+    background-color: #111;
+    border-left-color: #1860a6;
+    color: #1860a6;
+  }
+
+  #menu ul a:hover i:first-child {
+    color: #1860a6;
+  }
+
+  /* Submenu */
+
+  #menu ul li a.active+ul {
+    display: block
+  }
+
+  #menu ul li ul {
+    margin-top: 0;
+    display: none;
+  }
+
+  #menu ul li ul li {
+    border-bottom: none;
+  }
+
+  #menu ul li ul li a {
+    padding-left: 30px;
+  }
+
+  #menu ul li ul li a:hover {
+    background-color: #1A1A1A;
+  }
+
+  /* /Submenu */
+
+
+  /* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+  .left {
+    left: -280px;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  #container {
+    padding: 50px;
+  }
+/* Mobile Menu css ends here */
+
+/* Bottom Navigation Grid css starts here */
+.bottom-navigation{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 8px 8px 8px;
+    box-shadow: inset -8px -8px 16px #fff,inset 8px 8px 16px rgba(55,84,170,.16)!important;
+}
+
+.bottom-navigation-grid-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.bottom-navigation-grid-row>div>p>i{
+    font-size: 18px;
+}
+
+.bottom-navigation-grid-row>div>p{
+    margin-bottom: 0rem;
+    text-align: center;
+    font-family: 'Saira_Medium';
+    font-size: 14px;
+}
+
+#bottom_nav{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    #bottom_nav{
+        display: block;
+    }
+    footer{
+        margin-bottom: 3.99rem;
+    }
+}
+/* Bottom Navigation Grid css ends here */
