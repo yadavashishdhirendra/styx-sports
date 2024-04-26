@@ -1,0 +1,389 @@
+body {
+    background-color: #f5f5f5 !important;
+}
+
+.Runner_player {
+    background: linear-gradient(142.96deg, #000 21.5%, transparent 315.43%), url("../Images/bg.bd377d6f0627be16e63(1).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 30%;
+    padding: 100px 10px 30px 10px;
+    overflow: hidden;
+
+}
+
+
+.ranking-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.cap-list {
+    display: flex;
+    align-items: center;
+}
+
+.yellow_sep {
+    border-left: 3px solid #ffe35d;
+    padding: 12px 0px 12px 30px;
+}
+
+.cap-list h5 {
+    font-size: 35px;
+    font-family: 'Saira_SemiBold';
+    color: #fff;
+}
+
+.cap-list p {
+    font-size: 14px;
+    color: #858584;
+    margin-bottom: 0;
+    font-family: 'Saira_Medium';
+}
+
+.btn-outline-primary {
+    margin: 10px 0;
+    border: 1px solid #102C6D;
+    color: white;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: .35em 1.5em;
+    background: transparent;
+    font-family: 'Saira_Regular';
+}
+
+.btn-outline-primary:hover{
+    background-color: #05508d !important;
+    border: 1px solid white;
+}
+
+.cap-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 32px;
+}
+
+.playerProfileDefault {
+    position: relative;
+    overflow: hidden;
+    margin: 0px -8px;
+}
+
+.playerProfileDefault .head_face {
+    max-width: 130px;
+    width: 100%;
+}
+
+.playerProfileDefault .cloth {
+    left: 1px;
+    position: absolute;
+    max-width: 130px;
+    bottom: -13px;
+    z-index: 1;
+    width: 100%;
+}
+
+.head_faces {
+    max-width: 180px;
+    z-index: 2;
+    width: 100%;
+}
+
+.cloth_sec {
+    left: 1px;
+    position: absolute;
+    max-width: 180px;
+    bottom: -17px;
+    z-index: 2;
+    width: 100%;
+}
+
+
+
+.text_container {
+    text-align: center;
+}
+
+.playerProfileDefault:nth-child(1) .text_container {
+    text-align: end;
+}
+
+.text_container h4 {
+    color: #fcfcfc;
+    font-size: 23.6492px;
+    font-family: 'Saira_SemiBold';
+}
+
+.text_container h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 36;
+    font-family: 'Saira_Bold';
+}
+
+.top_slide {
+    margin-top: 48px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .ranking-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .text_container h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 384.99px) {
+    .cap-lists {
+        top: 48px;
+    }
+
+    .playerProfileDefault .cloth {
+        z-index: initial;
+    }
+
+    .head_faces {
+        z-index: initial;
+    }
+
+    .cap-list h5 {
+        font-size: 28px;
+    }
+
+    .cloth_sec {
+        z-index: initial;
+    }
+
+}
+
+
+/* table section start here */
+.table_wrapper {
+    padding: 10px 10px 10px 0px;
+}
+
+.table_section table {
+    width: 100%;
+}
+
+
+.table_section th {
+    color: #4a4a4a;
+    background: #f7f7f7;
+    font-family: 'Saira_SemiBold';
+    padding: 1em;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.table_section td {
+    padding: 1em;
+    font-family: 'Saira_Regular';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.image_class_cont {
+    position: relative;
+}
+
+.cloth_box {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.team_name_image img {
+    max-width: 22px;
+    margin-right: 2px;
+    height: 22px;
+    width: 100%;
+}
+
+.image_class_cont {
+    border-radius: 100px;
+}
+
+.palyer_names_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.palyer_names_wrapper span {
+    margin-left: 5px;
+}
+
+.palyer_names_wrapper img {
+    max-width: 30px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.palyer_names_wrapper a {
+    font-family: 'Saira_SemiBold';
+    color: #000;
+    text-decoration: none;
+}
+
+.table_section tbody, td, tfoot, th, thead, tr {
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.run {
+    color: #1860a6 !important;
+    background-color: #f0f3f5 !important;
+}
+
+
+
+.runs {
+    background-color: #ffffff !important;
+}
+
+
+.modal {
+    --bs-modal-width: 1100px;
+    top: 256px;
+    left: -64px !important;
+    overflow: initial !important;
+}
+
+.applyfilter {
+    position: absolute;
+    right: 0;
+    top: -55px;
+}
+
+.applyfilter .btn-primary {
+    background: #05508d;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: 'Saira_SemiBold';
+    font-size: 17px;
+    border-color: transparent;
+    line-height: 20px;
+    color: #fcfcfc;
+}
+
+@media screen and (max-width: 1399.98px) {
+    .modal {
+        left: 24px !important;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .modal {
+        --bs-modal-width: 923px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .yellow_sep .btn-outline-primary {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .table_section {
+        overflow-x: auto;
+    }
+
+    .table_section table {
+        white-space: nowrap;
+    }
+
+    .palyer_names_wrapper {
+        margin-right: 10px;
+    }
+
+    .team_name_image {
+        margin-right: 20px;
+    }
+
+    .palyer_names_wrapper span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.most label {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-family: 'Saira_Regular';
+}
+
+.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    box-shadow: none !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-search .select2-search__field:focus {
+    box-shadow: none !important;
+}
+
+.select2-dropdown {
+    top: 10px;
+}
+
+.select2-container--bootstrap-5 .select2-selection {
+    border: 1px solid #dadada !important;
+    border-radius: 5px !important;
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.select2-container--bootstrap-5 .select2-selection {
+    min-width: 150px;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    line-height: 2 !important;
+    font-family: "Saira_Regular";
+    color: #05508d !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--selected, .select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option[aria-selected=true] {
+    background-color: #fbfbfb !important;
+    color: #000 !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option {
+    font-family: "Saira_Regular";
+    margin: 5px 0px;
+
+}
+
+.select2-container .select2-selection--single {
+    height: 45px !important;
+}
+
+
+@media screen and (max-width: 1199.98px) {
+    .select2-container--bootstrap-5 .select2-selection {
+        min-width: 120px;
+    }
+}
+
+
+footer {
+    margin-top: 11.5rem;
+}
+
+/* table section ends here */

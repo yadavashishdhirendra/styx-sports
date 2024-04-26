@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061945" />
+    <title>ScoreBoard</title>
+
+    <!-- External CSS Link -->
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="./Assets/ScoreBoardCSS/style.css?ver=1.1">
+    <link rel="stylesheet" href="./Assets/CSS/orangecaplist.css">
+
+    <!-- Select css -->
+    <link rel="stylesheet" href="./Assets/CSS/select2.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/select2-bootstrap-5-theme.min.css">
+</head>
+
+<body>
+
+    <!-- header component starts here -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" src="./Assets/Icons/logo.png" alt="">
+                </a>
+                <button id="showmenu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Streaming</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Series
+                            </a>
+                            <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="hide-scrollbar">
+                                    <button class="scroll-btn left-btn"><i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1FR.avif" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1HN.webp" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1IR.webp" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JS.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1GV.avif" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JS (1).png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <img src="./Assets/ScoreBoardAssets/Icons/1JF.png" alt="">
+                                        </a></li>
+                                    <button class="scroll-btn right-btn"><i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+
+                                <div>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header component ends here -->
+
+    <!-- Mobile Sidebar Component start here -->
+    <nav id="menu" class="left">
+        <div class="input-sidebar">
+            <input type="text" placeholder="Search Players, Teams & Series">
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+            <li> <a href="#"><i class="fa fa-laptop"></i>Services <i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">AUSW VS BANW</a></li>
+                    <li><a href="#">T20 Series</a></li>
+                    <li><a href="#">Test Matches</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile Sidebar component ends here -->
+
+    <!-- Run display start here -->
+    <section class="Runner_player">
+        <div class="container">
+            <div class="ranking-container">
+                <div class="cap-list">
+                    <div class="yellow_sep">
+                        <h5>IPL 2024 Orange Cap List </h5>
+                        <p>Most Runs in IPL 2024</p>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Apply Filters
+                        </button>
+                    </div>
+                    <!-- Modal -->
+
+
+
+
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="applyfilter">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Apply
+                                        changes</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Andheri</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Mumbai</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Rajasthan</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Chandigarh</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Haryana</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="most">
+                                        <div>
+                                            <label for="">Punjab</label>
+                                        </div>
+
+                                        <select class="my-select2">
+                                            <option selected>Select Options</option>
+                                            <option>Software Dev</option>
+                                            <option>JS Developer</option>
+                                            <option>Python</option>
+                                            <option>8 Ajooba</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cap-lists">
+
+                    <div class="playerProfileDefault top_slide">
+                        <div class="text_container">
+                            <h4>R GAIKWAD</h4>
+                            <h3>349</h3>
+                        </div>
+                        <img class="head_face" src="./Assets/OrangeAssets/ES.avif" alt="">
+                        <img class="cloth" src="./Assets/OrangeAssets/G.avif" alt="">
+                    </div>
+                    <div class="playerProfileDefault">
+                        <div class="text_container">
+                            <h4>V KOHLI </h4>
+                            <h3>349</h3>
+                        </div>
+                        <img class="head_faces" src="./Assets/OrangeAssets/4I.avif" alt="">
+                        <img class="cloth_sec" src="./Assets/OrangeAssets/K.png" alt="">
+                    </div>
+                    <div class="playerProfileDefault top_slide">
+                        <div class="text_container">
+                            <h4>R PANT</h4>
+                            <h3>349</h3>
+                        </div>
+                        <img class="head_face" src="./Assets/OrangeAssets/CL.avif" alt="">
+                        <img class="cloth" src="./Assets/OrangeAssets/H.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Run display end here -->
+
+    <!-- table section start here -->
+    <section class="table_wrapper">
+        <div class="container">
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Player </th>
+                            <th>Team</th>
+                            <th class="run">Runs</th>
+                            <th>Mat</th>
+                            <th>Inns</th>
+                            <th>HS</th>
+                            <th>Avg </th>
+                            <th>SR</th>
+                            <th>100</th>
+                            <th>50</th>
+                            <th>4s</th>
+                            <th>6s</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="palyer_names_wrapper">
+                                    <a href="" class="image_class_cont">
+                                        <img src="./Assets/OrangeAssets/4I.avif" alt="">
+                                        <img class="cloth_box" src="./Assets/OrangeAssets/K.png" alt="">
+                                        <span> Virat Kohli</span>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team_name_image">
+                                    <img src="./Assets/OrangeAssets/K.avif" alt="">
+                                    <span>RCB</span>
+                                </div>
+                            </td>
+                            <td class="runs">
+                                <div>379</div>
+                            </td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>113</td>
+                            <td>63.17 </td>
+                            <td>150.40 </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>36</td>
+                            <td>16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- table section end here -->
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Styxsports. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bottom Navigation -->
+    <section class="bottom-navigation-wrapper">
+        <div class="bottom-navigation">
+            <div class="bottom-navigation-grid-row">
+                <div>
+                    <p><i class="fa-solid fa-house"></i></p>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-baseball-bat-ball"></i></p>
+                    <p>Matches</p>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-trophy"></i></p>
+                    <p>Series</p>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-video"></i></p>
+                    <p>Videos</p>
+                </div>
+                <div>
+                    <p><i class="fa-regular fa-newspaper"></i></p>
+                    <p>News</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bottom Navigation -->
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="./Assets/JS/jquery.min.js"></script>
+
+
+    <!-- Navigation Script -->
+    <script src="./Assets/ScoreBoardJS/Navigation.js?ver=1.0"></script>
+    <script src="./Assets/JS/select2.min.js"></script>
+    <script>
+
+
+        jQuery(function () {
+
+            $('.my-select2').each(function () {
+                $(this).select2({
+                    theme: "bootstrap-5",
+                    dropdownParent: $(this).parent(), // fix select2 search input focus bug
+                })
+            })
+
+            // fix select2 bootstrap modal scroll bug
+            $(document).on('select2:close', '.my-select2', function (e) {
+                var evt = "scroll.select2"
+                $(e.target).parents().off(evt)
+                $(window).off(evt)
+            })
+
+        })
+    </script>
+</body>
+
+</html>
