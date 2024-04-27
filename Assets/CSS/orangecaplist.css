@@ -54,7 +54,7 @@ body {
     font-family: 'Saira_Regular';
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background-color: #05508d !important;
     border: 1px solid white;
 }
@@ -325,6 +325,14 @@ body {
     font-family: 'Saira_Regular';
 }
 
+
+.most .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+}
+
 .select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
     box-shadow: none !important;
 }
@@ -384,6 +392,52 @@ body {
 
 footer {
     margin-top: 11.5rem;
+}
+
+
+.shuffle-button {
+    pointer-events: all;
+    border-radius: 28px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shuffle-button span {
+    font-family: "Saira_SemiBold";
+    color: #05508d;
+    margin-left: 10px;
+}
+
+.shuffle-stat {
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.load-more a {
+    text-decoration: none;
+    font-family: "Saira_Regular";
+    color: #05508d;
+    font-size: 16px !important;
+}
+
+.last-box td {
+    border-bottom: 1px solid transparent;
+}
+
+@media screen and (max-width: 1080px) {
+    .shuffle-button {
+        display: none;
+    }
+
 }
 
 /* table section ends here */
